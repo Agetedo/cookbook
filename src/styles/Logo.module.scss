@@ -1,0 +1,14 @@
+.logo {
+  transition: all 1s ease;
+}
+//---@media-header__logo------------------
+@media (hover: hover) and (pointer: fine) {
+  .logo:hover {
+    opacity: 0.6;
+  }
+}
+  @media (hover: none) {
+  .logo:hover {
+    opacity: 0.6;
+  }
+}

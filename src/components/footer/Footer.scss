@@ -1,0 +1,170 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+.footer__items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer__reminder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  .text {
+    max-width: 272px;
+    font-size: 18px;
+    line-height: 26px;
+    text-wrap: pretty;
+    color: var(--orange-color);
+  }
+}
+.footer__form {
+  display: flex;
+  align-items: flex-end;
+}
+.email__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.email__label {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--background);
+} 
+.email__input {
+  padding: 10px 26px;
+  border-style: none;
+  border-radius: 8px 0px 0px 8px;
+  font-size: 17px;
+  line-height: 22px;
+  background-color: var(--background);
+  color: var(--primary);
+} 
+.email__input::placeholder {
+  padding-left: 1px;
+  font-family: "Lobster";
+  font-size: 17px;
+  line-height: 22px; 
+}
+.footer__button {
+  button {
+    display: inline-flex;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary) ;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--orange-color);
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+  }
+}
+.error-message {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--error-message-color);
+}
+.footer__social {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.social-menu__list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.social-menu__link {
+  padding: 3px;
+  border-radius: 7px;
+  background-color: var(--background);
+  transition: all 1s ease;
+}
+.footer__text {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+}
+//---@media-footer---------------
+@media (hover: hover) and (pointer: fine) {
+  .footer__form .footer__button button:hover {
+    background-color: var(--orange-color);
+    color: var(--black-text-color);
+  }
+  .social-menu__link:hover {
+    background-color: var(--primary);
+  }
+}
+@media (hover: none) {
+  .footer__form .footer__button button:active {
+    background-color: var(--orange-color);
+    color: var(--black-text-color);
+  }
+  .social-menu__link:active {
+    background-color: var(--primary);
+  }
+}
+@media(max-width: 768px) {
+  .footer {
+    padding-top: calc(20px + (32 - 20)*((100vw - 320px)/(970 - 320))); 
+    padding-bottom: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320))); 
+  }
+  .footer__items {
+    flex-direction: column;
+    align-items: center;
+    gap: calc(20px + (50 - 20)*((100vw - 320px)/(768 - 320)));
+  }
+  .footer__form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .email__label {
+    align-self: center;
+    font-size: calc(16px + (18 - 16)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(20px + (24 - 20)*((100vw - 320px)/(768 - 320)));
+  }
+  .footer__reminder .text {
+    max-width: 100%;
+    font-size: calc(13px + (18 - 13)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(21px + (26 - 21)*((100vw - 320px)/(768 - 320)));
+  }
+  .email__input,
+  .footer__button button {
+    border-radius: 8px;
+  }
+  .email__input,
+  .footer__button button {
+    font-size: calc(14px + (17 - 14)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(18px + (22 - 18)*((100vw - 320px)/(768 - 320)));
+  }
+  .error-message {
+    margin-bottom: calc(6px + (10 - 6)*((100vw - 320px)/(768 - 320)));
+    font-size: calc(10px + (12 - 10)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(15px + (18 - 15)*((100vw - 320px)/(768 - 320)));
+  }
+  .footer__social {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .social-menu__link img {
+    width: calc(15px + (20 - 15)*((100vw - 320px)/(768 - 320)));
+  }
+  .footer__text {
+    font-size: calc(10px + (12 - 10)*((100vw - 320px)/(768 - 320))); 
+    line-height: calc(12px + (14 - 12)*((100vw - 320px)/(768 - 320))); 
+  }
+}
