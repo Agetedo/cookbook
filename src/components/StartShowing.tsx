@@ -6,7 +6,7 @@ import styles from "..//styles/StartShowing.module.scss";
 
 export default function StartShowing() {
   return (
-    <Conteiner className={styles.start__showing}>
+    <Conteiner className={styles.startShowing}>
       <StartPageLogo imgAlt={"Cook Book logo"} />
       <StartPageContent 
         title={"ANYBODY CAN COOK"} 
@@ -19,7 +19,7 @@ export default function StartShowing() {
 
 function StartPageLogo({ imgAlt }: { imgAlt: string }) {
   return (
-    <div className={styles.start__logo}>
+    <div className={styles.startLogo}>
       <img src={headerLogo} alt={imgAlt} />
     </div>
   );
@@ -32,10 +32,10 @@ interface StartPageProps {
 }
 function StartPageContent({ title, text, buttonText }: StartPageProps) {
   return (
-    <div className={styles.start__items}>
+    <div className={styles.startItems}>
       <h1 className={styles.title}>{title}</h1>
       <p className={styles.text}>{text}</p>
-      <Link to={PathConstants.SELECTEDPAGE} className={styles.start__button}>{buttonText}</Link>
+      <Link to={PathConstants.SELECTEDPAGE} className={styles.startButton}>{buttonText}</Link>
     </div>
   );
 }

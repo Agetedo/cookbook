@@ -1,85 +1,99 @@
-//import { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Conteiner from "../components/Conteiner";
-import { ingredients } from "../dB/ingredients";
 import { recipesCards } from "../dB/recipesCards";
-import IngredientButton from "./IngredientButton";
-import styles from "../styles/Selected.module.scss";
-const tryText = <>{"Easy and simple! Select ingredients and get recipes for preparing dishes from them. Try it!"}</>;
+import "../styles/Selected.scss";
+const tryText = <>{"Easy and simple! Choose time for yourself and get recipes for cooking. Try it!"}</>;
 
 export default function Selected() {
+  const [cards, setCards] = useState("");
+
+  const filteredCards = cards === "" ? recipesCards :
+    recipesCards.filter(recipe => recipe.mealTime.includes(cards));
+  const recipeCardsList = filteredCards.map((card) => 
+    <section className={"recipe-card"} key={card.id}>
+      <Link to={card.linkTo} className={"recipe-card__link"}>
+        <h4 className={"recipe-card__time"}>{card.mealTime}</h4>
+        <img src={card.imageSrc} alt={card.title} />
+        <h3 className={"recipe-card__title"}>{card.title}</h3>
+      </Link>
+    </section>
+  )
+
   return (
-    <Conteiner className={"ingredients"}>
+    <Conteiner className={"selected"}>
       <SelectedTitle 
         title="Anybody can cook!"
         text={tryText} 
       />
-      {/*<div className={styles.items}>
-        
-        <div className={styles.ingredients__buttons}>
-          {ingredients.map((good) => {
-            const isSelected = selectedProducts.includes(good)
+      <ButtonsWrapper className={"buttons__wrapper"}>
+        <ButtonFilter
+          onClick={() => setCards("")}
+          buttonText={"All"}
+          className={cards === "" ? "filter__active" : "button__filter"}
+        />
+        <ButtonFilter
+          onClick={() => setCards("Breakfast")}
+          buttonText={"Breakfast"}
+          className={cards === "Breakfast" ? "filter__active" : "button__filter"}
+        />
+        <ButtonFilter
+          onClick={() => setCards("Brunch")}
+          buttonText={"Brunch"}
+          className={cards === "Brunch" ? "filter__active" : "button__filter"}
+        />
+        <ButtonFilter
+          onClick={() => setCards("Lunch")}
+          buttonText={"Lunch"}
+          className={cards === "Lunch" ? "filter__active" : "button__filter"}
+        />
+        <ButtonFilter
+          onClick={() => setCards("Dinner")}
+          buttonText={"Dinner"}
+          className={cards === "Dinner" ? "filter__active" : "button__filter"}
+        />
+      </ButtonsWrapper>
 
-            return (
-              <div className={styles.ingredient__button} key={good}>
-                <button id={good} type="button" className={styles.button}
-                  onClick={() => handleSelectGood(good)}>{isSelected ? <Minus /> : <Plus />}
-                </button>
-                <span>{good}</span>
-              </div>
-            )
-          })}
-        </div>
-
-        <div className={styles.ingredients__selected}>
-          {selectedProducts.length < 1 ? <h2 id={styles.notSelected}>You haven't chosen anything</h2>
-            : (<h2 id={styles.isSelected}>
-              <SelectedMark mark="IS SELECTED" />
-              {selectedProducts.join(", ")}
-              <button onClick={handleClearAll} type="button" id={styles.deleteButton}>
-                Delete All
-              </button>
-            </h2>)
-          }
-        </div>
-      </div>*/}
-
-      <div className={styles.ingredients__buttons}>
-        {ingredients.map((unit) => {
-          return (
-            <IngredientButton key={unit.id} title={unit.title} />
-          )
-        })}
-      </div>
-      {/*selectedProducts && <RecipesList />*/}
+      <CardsWrapper className={"cards__items"}>
+        {recipeCardsList}
+      </CardsWrapper>
     </Conteiner>
   )
 }
 
-
-function RecipesList() {
-  const recipesSelectedList = recipesCards.map(card => 
-    <div key={card.id} className="card">
-      <p>{card.recipe}</p>
-    </div>
-  );
-  return(
-    <div className="list">{recipesSelectedList}</div>
-  );
-}
-
-
-
 function SelectedTitle({ title, text }: { title: string, text: string | typeof tryText }) {
   return (
     <>
-      <h1 className={styles.title}>{title}</h1>
-      <p className={styles.text}>{text}</p>
+      <h1 className="selected__title">{title}</h1>
+      <p className="selected__text">{text}</p>
     </>
   )
 }
 
-function SelectedMark({ mark }: { mark: string }) {
-  return (
-    <p className={styles.mark}>{mark}</p>
-  )
+interface ButtonProps {
+  className: string;
+  onClick: () => void;
+  buttonText: string;
+}
+function ButtonFilter ({ className, onClick, buttonText }: ButtonProps) {
+  return(
+    <button onClick={onClick} className={className}>
+      {buttonText}
+    </button>
+  );
+}
+
+interface WrapperProps {
+  className: string;
+  children?: React.ReactNode;
+}
+function ButtonsWrapper ({ className, children }: WrapperProps) {
+  return(
+    <div className={className}>{children}</div>
+  );
+}
+function CardsWrapper ({ className, children }: WrapperProps) {
+  return(
+    <div className={className}>{children}</div>
+  );
 }

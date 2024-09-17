@@ -1,0 +1,105 @@
+.selected {
+  margin-top: 25px;
+}
+.selected__title {
+  font-family: "Lobster";
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 97px;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--primary);
+}
+.selected__text {
+  margin: 25px auto 0 auto;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  text-wrap: pretty;
+  color: var(--orange-color);
+}
+.buttons__wrapper {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+@mixin buttonText {
+  display: inline-flex;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 22px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.button__filter {
+  @include buttonText;
+  background-color: var(--yellow-bg-color);
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.filter__active {
+  @include buttonText;
+  background-color: var(--primary);
+  color: var(--orange-color);
+  cursor: not-allowed;
+}
+.cards__items {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: auto;
+  gap: 50px 30px;
+}
+.recipe-card {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+.recipe-card__link {
+  position: relative;
+  background-color: var(--light-gray-bg-color);
+  border-radius: 0px 0px 15px 15px;
+  border-bottom: 2px solid var(--yellow-bg-color);
+}
+.recipe-card__time {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: var(--yellow-bg-color);
+  font-family: "Lobster";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.recipe-card__title {
+  max-width: 370px;
+  margin: 10px auto 10px auto;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-wrap: pretty;
+  color: var(--orange-color);
+}
+//---@media-selected-------------
+@media (hover: hover) and (pointer: fine) {
+  .button__filter:hover {
+    background-color: var(--orange-color);
+  }
+}
+@media (hover: none) {
+  .button__filter:active {
+    background-color: var(--orange-color);
+  }
+}

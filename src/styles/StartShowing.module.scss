@@ -1,4 +1,4 @@
-.start__showing {
+.startShowing {
   padding-top: 15px;
   height: 100vh;
   background-image: url(/start-showing-bg.gif);
@@ -6,7 +6,7 @@
   background-position: center center;
   background-size: cover;
 }
-.start__items {
+.startItems {
   margin-top: 10%;
   margin-bottom: 10%;
   display: flex;
@@ -51,7 +51,7 @@
   color: var(--background);
   text-shadow: 8px 8px 12px var(--start-text-shodow-color);
 }
-.start__button {
+.startButton {
   border: none; 
   outline: none;
   display: inline-flex;
@@ -70,21 +70,21 @@
 }
 //---@media-start__showing------------
 @media (hover: hover) and (pointer: fine) {
-  .start__button:hover {
+  .startButton:hover {
     box-shadow: none;
     background-color: var(--black-text-color);
     color: var(--yellow-bg-color);
   }
 }
 @media (hover: none) {
-  .start__button:active {
+  .startButton:active {
     box-shadow: none;
     background-color: var(--black-text-color);
     color: var(--yellow-bg-color);
   }
 }
 @media(max-width: 1440px) {
-  .start__items {
+  .startItems {
     gap: calc(30px + (50 - 30)*((100vw - 320px)/(1440 - 320)));
   }
   .title {
@@ -95,7 +95,7 @@
     font-size: calc(25px + (35 - 25)*((100vw - 320px)/(1440 - 320)));
     line-height: calc(30px + (43 - 30)*((100vw - 320px)/(1440 - 320)));
   }
-  .start__button {
+  .startButton {
     padding-top: calc(10px + (20 - 10)*((100vw - 320px)/(1440 - 320)));
     padding-right: calc(37px + (74 - 37)*((100vw - 320px)/(1440 - 320)));
     padding-bottom: calc(10px + (20 - 10)*((100vw - 320px)/(1440 - 320)));
@@ -105,7 +105,7 @@
   }
 }
 @media (orientation: landscape) and (max-height: 540px) {
-  .start__showing {
+  .startShowing {
     overflow-y: scroll;
   } 
 }
