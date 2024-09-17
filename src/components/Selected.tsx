@@ -14,7 +14,8 @@ export default function Selected() {
     <section className={"recipe-card"} key={card.id}>
       <Link to={card.linkTo} className={"recipe-card__link"}>
         <h4 className={"recipe-card__time"}>{card.mealTime}</h4>
-        <img src={card.imageSrc} alt={card.title} />
+        <p className={"recipe-card__hovered"}>{card.hoveredText}</p>
+        <img src={card.imageSrc} alt={card.title} className={"recipe-card__image"}/>
         <h3 className={"recipe-card__title"}>{card.title}</h3>
       </Link>
     </section>
