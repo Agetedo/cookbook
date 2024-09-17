@@ -16,7 +16,10 @@ export default function Footer() {
         />
         <FooterForm emailLabel={"Never miss a recipe"} />  
       </div>
-      <FooterSocial rightsText={" Cook Book. All rights reserved."} />
+      <FooterSocial 
+        rightsText={" Cook Book. All rights reserved."} 
+        createdText={"Webside designed and created by Agetedo"}
+      />
     </FooterConteiner>  
   );
 }
@@ -87,7 +90,7 @@ function FooterForm({ emailLabel }: { emailLabel: string }) {
   );
 }
 
-function FooterSocial({ rightsText }: { rightsText: string }) {
+function FooterSocial({ rightsText, createdText }: { rightsText: string; createdText: string  }) {
   const footerSocialList = socialMenu.map(item => 
     <li key={item.id} className="social-menu__item">
       <Link to={item.linkTo} rel="noopener" target="_blank" className="social-menu__link">
@@ -97,12 +100,14 @@ function FooterSocial({ rightsText }: { rightsText: string }) {
   );
 
   return ( 
-    <div className="footer__social">
-      <p className="footer__text">{new Date().getFullYear()} &copy;{rightsText}</p>
-
-      <nav className="social__menu">
-        <ul className="social-menu__list">{footerSocialList}</ul>
-      </nav>
-    </div>
+    <>
+      <div className="footer__social">
+        <p className="footer__text">{new Date().getFullYear()} &copy;{rightsText}</p>
+        <nav className="social__menu">
+          <ul className="social-menu__list">{footerSocialList}</ul>
+        </nav>
+      </div> 
+      <span className="created__text">{createdText}</span>
+    </>
   );
 }
