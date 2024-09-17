@@ -17,7 +17,7 @@ export default function Selected() {
         <p className={"recipe-card__hovered"}>{card.hoveredText}</p>
         <img src={card.imageSrc} alt={card.title} className={"recipe-card__image"}/>
         <h3 className={"recipe-card__title"}>{card.title}</h3>
-      </Link>
+      </Link>  
     </section>
   )
 
