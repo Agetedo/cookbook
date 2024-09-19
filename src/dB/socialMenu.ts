@@ -14,10 +14,10 @@ export const socialMenu: Social[] = [{
   linkTo: "https://www.google.com/",
 }, {
   id: "fSm03",
-  imgSrc: "/github-icon.png",
-  linkTo: "https://github.com/",
+  imgSrc: "/social-drive-icon.png",
+  linkTo: "https://www.google.com/",
 },{
   id: "fSm04",
-  imgSrc: "/social-icon.png",
-  linkTo: "https://www.google.com/", 
+  imgSrc: "/social-codepen-icon.png",
+  linkTo: "https://codepen.io/", 
 }];

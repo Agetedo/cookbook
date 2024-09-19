@@ -1,5 +1,6 @@
 .selected {
   margin-top: 25px;
+  margin-bottom: 100px;
 }
 .selected__title {
   font-family: "Lobster";
@@ -35,6 +36,7 @@
   font-family: inherit;
   font-weight: 800;
   font-size: 22px;
+  line-height: 22px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -53,7 +55,7 @@
 }
 .cards__items {
   margin-top: 60px;
-  margin-bottom: 100px;
+  
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   grid-template-rows: auto;
@@ -77,13 +79,15 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  margin-left: 10px;
   padding: 5px;
-  background-color: var(--yellow-bg-color);
+  background-color: var(--recipe-time-bg);
   font-family: "Lobster";
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   text-transform: capitalize;
+  text-wrap: pretty;
 }
 .recipe-card__hovered{
   display: none;
@@ -91,6 +95,7 @@
 .recipe-card__title {
   max-width: 370px;
   margin: 10px auto 10px auto;
+  padding: 0px 7px 0px 7px;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -132,5 +137,79 @@
 @media (hover: none) {
   .button__filter:active {
     background-color: var(--orange-color);
+  }
+  .recipe-card__link:active {
+    .recipe-card__image {
+      opacity: 0.2;
+    }
+    .recipe-card__time {
+      display: none;
+    }
+    .recipe-card__title {
+      color: var(--primary);
+    }
+  }
+}
+@media(max-width: 1676px) {
+  .selected {
+    margin-top: calc(20px + (25 - 20)*((100vw - 320px)/(1676 - 320)));
+    margin-bottom: calc(50px + (100 - 50)*((100vw - 320px)/(1676 - 320)));
+  }
+}
+@media(max-width: 1257px) {
+  .cards__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .buttons__wrapper {
+    gap: calc(16px + (60 - 16)*((100vw - 320px)/(1257 - 320)));
+  }
+}
+@media(max-width: 1024px) {
+  .recipe-card__hovered {
+    display: none;
+  }
+}
+@media(max-width: 768px) {
+  .cards__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .buttons__wrapper {
+    margin-top: calc(35px + (60 - 35)*((100vw - 320px)/(768 - 320)));
+    flex-wrap: wrap;
+  }
+  .selected__title {
+    font-size: calc(36px + (73 - 36)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(40px + (97 - 40)*((100vw - 320px)/(768 - 320)));
+  }
+  .selected__text {
+    margin-top: calc(10px + (25 - 10)*((100vw - 320px)/(768 - 320)));
+    font-size: calc(16px + (25 - 16)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(24px + (35 - 24)*((100vw - 320px)/(768 - 320)));
+  }
+  .button__filter,
+  .filter__active {
+    padding: calc(8px + (15 - 8)*((100vw - 320px)/(768 - 320))) 
+             calc(10px + (20 - 10)*((100vw - 320px)/(768 - 320))); 
+    font-size: calc(16px + (22 - 16)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(16px + (22 - 16)*((100vw - 320px)/(768 - 320))); 
+  }
+  .cards__items {
+    margin-top: calc(30px + (60 - 30)*((100vw - 320px)/(768 - 320)));
+    column-gap: calc(10px + (30 - 10)*((100vw - 320px)/(768 - 320)));
+    row-gap: calc(30px + (50 - 30)*((100vw - 320px)/(768 - 320)));
+  }
+  .recipe-card__title {
+    padding-left: calc(3px + (7 - 3)*((100vw - 320px)/(768 - 320)));
+    padding-right: calc(3px + (7 - 3)*((100vw - 320px)/(768 - 320)));
+    font-size: calc(12px + (20 - 12)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(17px + (28 - 17)*((100vw - 320px)/(768 - 320)));
+  }
+  .recipe-card__time {
+    top: calc(5px + (10 - 5)*((100vw - 320px)/(768 - 320)));
+    right: calc(5px + (10 - 5)*((100vw - 320px)/(768 - 320)));
+    margin-left: calc(5px + (10 - 5)*((100vw - 320px)/(768 - 320)));
+    padding: calc(3px + (5 - 3)*((100vw - 320px)/(768 - 320)));
+    font-size: calc(11px + (20 - 11)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(11px + (20 - 11)*((100vw - 320px)/(768 - 320)));
   }
 }
