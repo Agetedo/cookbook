@@ -1,9 +1,9 @@
-//import Contact from "../components/contact/Contact.tsx";
+import Recipe from "../components/Recipe";
 
 export default function RecipePage01() {
   return (
     <>
-      RecipePage01 Croutons with omelette
+      <Recipe title={"Croutons with omelette"} />
     </>
   );
 }

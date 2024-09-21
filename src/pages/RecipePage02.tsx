@@ -1,9 +1,9 @@
-//import Contact from "../components/contact/Contact.tsx";
+import Recipe from "../components/Recipe";
 
 export default function RecipePage02() {
   return (
     <>
-      RecipePage02 Chicken broth with vegetables
+      <Recipe title={"Chicken broth with vegetables"} />
     </>
   );
 }
