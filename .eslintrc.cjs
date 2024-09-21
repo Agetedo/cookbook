@@ -10,11 +10,11 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh"],
   rules: {
-    indent: ["error", 2],
-    quotes: ["error", "double"],
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
     ],
+    indent: ["error", 2],
+    quotes: ["error", "double"],
   },
 }
