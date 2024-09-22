@@ -8,9 +8,9 @@ export default function Recipe({ title }: { title: string }) {
   );
 
   const recipesList = recipesFiltered.map( recipe =>
-    <section key={recipe.id} className={styles.ddddddddddddddddddd}>
-        
+    <section key={recipe.id} className={styles.recipe}>
       <h2 className={styles.title}>{recipe.title}</h2>
+      
       <img src={recipe.imageSrc} alt={recipe.title} className={styles.image}/>
       
     </section>
