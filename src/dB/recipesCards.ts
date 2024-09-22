@@ -39,10 +39,18 @@ export const recipesCards: CardType[] = [{
   ingredients: 
   [
     "Ingredients", 
-    "", 
-    "",
+    "🍽 2 tbsp olive oil", 
+    "🍽 1 leek, halved, washed, thinly sliced",
+    "🍽 2 garlic cloves, crushed",
+    "🍽 1 large carrot, peeled, diced",
+    "🍽2 sticks celery, diced",
+    "🍽 2 small zucchini, diced",
+    "🍽 1 swede or turnip, peeled, diced",
+    "🍽 1,25 cups dry soup mix, rinsed",
+    "🍽 8 cups chicken style liquid stock",
+    "🍽 1kg chicken legs",
   ],
-  recipeText: "",
+  recipeText: "Heat oil in a large saucepan over medium heat. Add leek and garlic. Cook, stirring, for 2 minutes or until soft but not coloured. Add carrot, celery, zucchini and swede. Cook for 2 minutes. Stir in soup mix, stock, chicken and 1 cup cold water. Increase heat to high. Bring to the boil. Reduce heat to low. Simmer, partially covered, stirring occasionally, for 1 hour or until soup mix and vegetables are tender. Remove chicken legs from soup. Allow to cool slightly. Remove meat from bones. Roughly chop chicken meat and add to soup. Season with salt and pepper. Ladle soup into warmed bowls. Serve.",
 }, {
   id: "reC03",
   linkTo: "/recipe-page03",
@@ -52,11 +60,12 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 4 slices of rye sourdough bread, toasted", 
+    "🍽 20g butter, softened", 
+    "🍽 300g fresh spinach",
+    "🍽  4 eggs",
   ],
-  recipeText: "",
+  recipeText: "Prepare four slices of toast, lightly butter each slice and place on warmed plates. Meanwhile place the spinach in a steamer over a pan of simmering water and steam for three minutes until it has wilted. Squeeze out any excess moisture from the spinach and season with a little salt and pepper. Place a quarter of the spinach on each piece of toast. Fill a wide pan with hot water to the depth of 5cm and bring to a simmer. Break each egg into a cup and then slip the egg into the water leaving plenty of space between each one. Set a timer for two minutes. Keep the water at a gentle simmer – just checking there are small bubbles rising from the bottom of the pan. After two minutes turn the heat off from under the pan and gently baste the eggs with the hot water until they are as cooked as you like them. After two minutes cooking time the white will be cooked and the yolk will be runny. After five minutes the yolk will be soft. Leave a little longer in the pan if you like the eggs well done. Remove the eggs from the pan using a draining spoon or fish slice, dab on a piece of kitchen paper to absorb any excess liquid and serve on top of toast topped with spinach.",
 },{
   id: "reC04",
   linkTo: "/recipe-page04",
@@ -66,11 +75,17 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 1 (2 to 2,5-pound) skinless salmon fillet", 
+    "🍽 Salt and freshly ground black pepper", 
+    "🍽 0,25 cup good olive oil",
+    "🍽 2 tablespoons freshly squeezed lemon juice",
+    "🍽 0,5 cup minced scallions, white and green parts (4 scallions)",
+    "🍽 0,5 cup minced fresh dill",
+    "🍽 0,5 cup minced fresh parsley",
+    "🍽 0,25 cup dry white wine",
+    "🍽 Lemon wedges, for serving",
   ],
-  recipeText: "",
+  recipeText: "Preheat the oven to 425 degrees. Place the salmon fillet in a glass, ceramic, or stainless-steel roasting dish and season it generously with salt and pepper. Whisk together the olive oil and lemon juice and drizzle the mixture evenly over the salmon. Let it stand at room temperature for 15 minutes. In a small bowl, stir together the scallions, dill, and parsley. Scatter the herb mixture over the salmon fillet, turning it so that both sides are generously coated with the green herbs. Pour the wine around the fish fillet. Roast the salmon for 10 to 12 minutes, until almost cooked in the center at the thickest part. The center will be firm with just a line of uncooked salmon in the very center. (I peek by inserting the tip of a small knife.) Cover the dish tightly with aluminum foil and allow to rest for 10 minutes. Cut the salmon crosswise into serving pieces and serve hot with lemon wedges.",
 }, {
   id: "reC05",
   linkTo: "/recipe-page05",
@@ -80,9 +95,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients:
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -94,9 +109,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -108,9 +123,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -122,9 +137,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -136,9 +151,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -150,9 +165,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -165,9 +180,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -179,9 +194,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -192,9 +207,9 @@ export const recipesCards: CardType[] = [{
   mealTime: "Brunch",
   hoveredText: "See recipe now!",
   ingredients: ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -206,9 +221,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -220,9 +235,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -234,9 +249,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -248,9 +263,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -262,9 +277,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -276,9 +291,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -290,9 +305,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -304,9 +319,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -318,9 +333,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -332,9 +347,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -346,9 +361,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -360,9 +375,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -374,9 +389,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -388,9 +403,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }, {
@@ -402,9 +417,9 @@ export const recipesCards: CardType[] = [{
   hoveredText: "See recipe now!",
   ingredients: 
   ["Ingredients",
-    "", 
-    "", 
-    "",
+    "🍽 ", 
+    "🍽 ", 
+    "🍽 ",
   ],
   recipeText: "",
 }];
