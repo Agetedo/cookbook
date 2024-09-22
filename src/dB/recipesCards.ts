@@ -5,6 +5,8 @@ interface CardType {
   title: string;
   mealTime: string;
   hoveredText: string;
+  ingredients: string[];
+  recipeText: string;
 }
   
 export const recipesCards: CardType[] = [{
@@ -14,6 +16,19 @@ export const recipesCards: CardType[] = [{
   title: "Croutons with omelette",
   mealTime: "Breakfast 🍽 Brunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  [
+    "Ingredients", 
+    "🍽 3 thick slices rustic rye bread cut from a loaf, crusts trimmed", 
+    "🍽 1 tablespoon extra-virgin olive oil",
+    "🍽 Salt and pepper",
+    "🍽 6 large eggs",
+    "🍽 1 tablespoon butter, divided",
+    "🍽 2,5 tablespoons chopped flat-leaf parsley, divided",
+    "🍽 1,5 tablespoons chopped chives, divided",
+    "🍽 0,5 cup shredded Gruyère cheese, divided"
+  ],
+  recipeText: "Preheat oven to 400°. Cut bread slices into 1/2-in. cubes. In a bowl, toss cubes with oil. Spread on a baking sheet, season with a pinch each of salt and pepper, and bake until crisp, 8 to 10 minutes. In a bowl, whisk eggs with salt and pepper to taste. Heat 1/2 tbsp. butter in an 8-in. nonstick frying pan over medium heat until foam subsides. Pour half of eggs into pan and swirl to spread to edges of pan. Sprinkle with 1 tbsp. parsley and 1/2 tbsp. chives. Lift edge of eggs with a heatproof flexible spatula and tilt pan to let uncooked egg flow underneath. Continue lifting edge and tilting pan, working your way around all sides, until eggs are just set and top is still a little moist, about 2 minutes total. Sprinkle 1/4 cup cheese and 1/2 cup croutons over half of omelet. Loosen omelet with spatula. Tip pan to slide omelet, filled side first, onto a warmed plate; flip bare half over cheese as omelet leaves pan. Make a second omelet the same way. Sprinkle remaining herbs over omelets just before serving.",
 }, {
   id: "reC02",
   linkTo: "/recipe-page02",
@@ -21,6 +36,13 @@ export const recipesCards: CardType[] = [{
   title: "Chicken broth with vegetables",
   mealTime: "Lunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  [
+    "Ingredients", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC03",
   linkTo: "/recipe-page03",
@@ -28,6 +50,13 @@ export const recipesCards: CardType[] = [{
   title: "Poached eggs on rye buns",
   mealTime: "Brunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 },{
   id: "reC04",
   linkTo: "/recipe-page04",
@@ -35,6 +64,13 @@ export const recipesCards: CardType[] = [{
   title: "Baked salmon with herbs",
   mealTime: "Lunch 🍽 Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC05",
   linkTo: "/recipe-page05",
@@ -42,6 +78,13 @@ export const recipesCards: CardType[] = [{
   title: "Pancakes with honey and blackberries",
   mealTime: "Breakfast",
   hoveredText: "See recipe now!",
+  ingredients:
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC06",
   linkTo: "/recipe-page06",
@@ -49,6 +92,13 @@ export const recipesCards: CardType[] = [{
   title: "Pasta with champignons",
   mealTime: "Lunch 🍽 Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC07",
   linkTo: "/recipe-page07",
@@ -56,6 +106,13 @@ export const recipesCards: CardType[] = [{
   title: "Grilled shrimp salad",
   mealTime: "Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC08",
   linkTo: "/recipe-page08",
@@ -63,6 +120,13 @@ export const recipesCards: CardType[] = [{
   title: "Meatloaf with prunes and juniper",
   mealTime: "Lunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC09",
   linkTo: "/recipe-page09",
@@ -70,6 +134,13 @@ export const recipesCards: CardType[] = [{
   title: "Strawberries and arugula salad",
   mealTime: "Lunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC10",
   linkTo: "/recipe-page10",
@@ -77,13 +148,28 @@ export const recipesCards: CardType[] = [{
   title: "Chocolate custard cream",
   mealTime: "Lunch 🍽 Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
+
   id: "reC11",
   linkTo: "/recipe-page11",
   imageSrc: "/recipe-card-image08.jpg",
   title: "Guacamole and Tuna Toast",
   mealTime: "Breakfast 🍽 Brunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC12",
   linkTo: "/recipe-page12",
@@ -91,6 +177,13 @@ export const recipesCards: CardType[] = [{
   title: "Egg on toast",
   mealTime: "Breakfast",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC13",
   linkTo: "/recipe-page13",
@@ -98,6 +191,12 @@ export const recipesCards: CardType[] = [{
   title: "Cheese casserole",
   mealTime: "Brunch",
   hoveredText: "See recipe now!",
+  ingredients: ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC14",
   linkTo: "/recipe-page14",
@@ -105,6 +204,13 @@ export const recipesCards: CardType[] = [{
   title: "Chicken legs in honey sauce",
   mealTime: "Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC15",
   linkTo: "/recipe-page15",
@@ -112,6 +218,13 @@ export const recipesCards: CardType[] = [{
   title: "Granola and raspberries in yogurt",
   mealTime: "Breakfast",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC16",
   linkTo: "/recipe-page16",
@@ -119,6 +232,13 @@ export const recipesCards: CardType[] = [{
   title: "Grilled beef steaks",
   mealTime: "Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC17",
   linkTo: "/recipe-page17",
@@ -126,6 +246,13 @@ export const recipesCards: CardType[] = [{
   title: "Pancakes with cottage cheese",
   mealTime: "Breakfast",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC18",
   linkTo: "/recipe-page18",
@@ -133,6 +260,13 @@ export const recipesCards: CardType[] = [{
   title: "Feta and olives salad",
   mealTime: "Lunch 🍽 Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC19",
   linkTo: "/recipe-page19",
@@ -140,6 +274,13 @@ export const recipesCards: CardType[] = [{
   title: "Creamy fish soup",
   mealTime: "Lunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC20",
   linkTo: "/recipe-page20",
@@ -147,6 +288,13 @@ export const recipesCards: CardType[] = [{
   title: "Cheese pie with bacon",
   mealTime: "Brunch 🍽 Lunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC21",
   linkTo: "/recipe-page21",
@@ -154,6 +302,13 @@ export const recipesCards: CardType[] = [{
   title: "Lemon cream jelly",
   mealTime: "Breakfast 🍽 Brunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC22",
   linkTo: "/recipe-page22",
@@ -161,6 +316,13 @@ export const recipesCards: CardType[] = [{
   title: "Cod with vegetables",
   mealTime: "Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC23",
   linkTo: "/recipe-page23",
@@ -168,6 +330,13 @@ export const recipesCards: CardType[] = [{
   title: "Mint lemonade",
   mealTime: "Brunch 🍽 Lunch 🍽 Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC24",
   linkTo: "/recipe-page24",
@@ -175,6 +344,13 @@ export const recipesCards: CardType[] = [{
   title: "Curd cookies",
   mealTime: "Breakfast 🍽 Brunch 🍽 Lunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC25",
   linkTo: "/recipe-page25",
@@ -182,6 +358,13 @@ export const recipesCards: CardType[] = [{
   title: "Meatballs in tomato sauce",
   mealTime: "Lunch 🍽 Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC26",
   linkTo: "/recipe-page26",
@@ -189,6 +372,13 @@ export const recipesCards: CardType[] = [{
   title: "Baked apples with cinnamon",
   mealTime: "Brunch 🍽 Lunch 🍽 Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC27",
   linkTo: "/recipe-page27",
@@ -196,6 +386,13 @@ export const recipesCards: CardType[] = [{
   title: "Eggplant with cheese",
   mealTime: "Lunch 🍽 Dinner",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }, {
   id: "reC28",
   linkTo: "/recipe-page28",
@@ -203,4 +400,11 @@ export const recipesCards: CardType[] = [{
   title: "Oatmeal with nuts",
   mealTime: "Breakfast 🍽 Brunch",
   hoveredText: "See recipe now!",
+  ingredients: 
+  ["Ingredients",
+    "", 
+    "", 
+    "",
+  ],
+  recipeText: "",
 }];
