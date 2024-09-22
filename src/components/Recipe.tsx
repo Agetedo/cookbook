@@ -30,6 +30,13 @@ export default function Recipe({ title }: { title: string }) {
           <li>{recipe.ingredients[8]}</li>
           <li>{recipe.ingredients[9]}</li>
           <li>{recipe.ingredients[10]}</li>
+          <li>{recipe.ingredients[11]}</li>
+          <li>{recipe.ingredients[12]}</li>
+          <li>{recipe.ingredients[13]}</li>
+          <li>{recipe.ingredients[14]}</li>
+          <li>{recipe.ingredients[15]}</li>
+          <li>{recipe.ingredients[16]}</li>
+          <li>{recipe.ingredients[17]}</li>
         </ul>
       </div>
       <p>{recipe.recipeText}</p>
