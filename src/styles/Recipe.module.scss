@@ -1,5 +1,20 @@
 .recipe {
   margin-top: 50px;
+  margin-bottom: 50px;/////
+}
+.conteiner {
+  max-width: 1088px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+.recipeCard {
+  padding: 15px;
+  background-color: var(--yellow-bg-color);
+  /*background-image: url(/mobile-menu-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;*/
+  
 }
 .recipetTitle {
   display: flex;
@@ -32,5 +47,21 @@
   gap: 100px;
 }
 .ingredientsTitle {
-  color: var(--yellow-bg-color);
+  margin-bottom: 15px;
+  line-height: 20px;
+  //color: var(--yellow-bg-color);
+  color: var(--background);
+}
+.ingredientsUnit {
+  font-size: 18px;
+  line-height: 30px;
+}
+.recipeItems {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.recipeText {
+  line-height: 25px;
+  text-wrap: pretty
 }

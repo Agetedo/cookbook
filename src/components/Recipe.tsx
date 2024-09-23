@@ -1,4 +1,3 @@
-import Conteiner from "./Conteiner";
 import { recipesCards } from "../dB/recipesCards";
 import styles from "../styles/Recipe.module.scss";
 
@@ -7,7 +6,7 @@ export default function Recipe({ title }: { title: string }) {
     episode.title === title
   );
   const recipesList = recipesFiltered.map( recipe =>
-    <div key={recipe.id} className={styles.recipe}>
+    <div key={recipe.id} className={styles.recipeCard}>
       <section className={styles.recipetTitle}>
         <h2 className={styles.title}>{recipe.title}</h2>
         <span className={styles.mealTime}>{recipe.mealTime}</span>
@@ -15,36 +14,52 @@ export default function Recipe({ title }: { title: string }) {
 
       <div className={styles.ingredientsItems}>
         <img src={recipe.imageSrc} alt={recipe.title} className={styles.image}/>
-        <ul className={styles.ingredients}>
-          <li className={styles.ingredientsTitle}>
-            {recipe.ingredients[0]} ({recipe.ingredients.length - 1}):
-          </li>
-          <li>{recipe.ingredients[1]}</li>
-          <li>{recipe.ingredients[2]}</li>
-          <li>{recipe.ingredients[3]}</li>
-          <li>{recipe.ingredients[4]}</li>
-          <li>{recipe.ingredients[5]}</li>
-          <li>{recipe.ingredients[6]}</li>
-          <li>{recipe.ingredients[7]}</li>
-          <li>{recipe.ingredients[8]}</li>
-          <li>{recipe.ingredients[9]}</li>
-          <li>{recipe.ingredients[10]}</li>
-          <li>{recipe.ingredients[11]}</li>
-          <li>{recipe.ingredients[12]}</li>
-          <li>{recipe.ingredients[13]}</li>
-          <li>{recipe.ingredients[14]}</li>
-          <li>{recipe.ingredients[15]}</li>
-          <li>{recipe.ingredients[16]}</li>
-          <li>{recipe.ingredients[17]}</li>
-        </ul>
+
+        <div className={styles.recipeItems}>
+          <ul className={styles.ingredients}>
+            <li className={styles.ingredientsTitle}>
+              {recipe.ingredients[0]} ({recipe.ingredients.length - 1}):
+            </li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[1]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[2]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[3]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[4]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[5]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[6]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[7]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[8]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[9]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[10]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[11]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[12]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[13]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[14]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[15]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[16]}</li>
+            <li className={styles.ingredientsUnit}>{recipe.ingredients[17]}</li>
+          </ul>
+          <p className={styles.recipeText}>{recipe.recipeText}</p>
+        </div>
       </div>
-      <p>{recipe.recipeText}</p>
+      
     </div>
   );
   
   return (
-    <Conteiner className={styles.edisodeList}>
+    <RecipeWrapper className={styles.recipe}>
       {recipesList}
-    </Conteiner>
+    </RecipeWrapper>
+  );
+}
+
+interface WrapperProps {
+  className: string;
+  children?: React.ReactNode;
+}
+function RecipeWrapper({ children, className }: WrapperProps) {
+  return (
+    <div className={className}>
+      <div className={styles.conteiner}>{children}</div>
+    </div>
   );
 }
