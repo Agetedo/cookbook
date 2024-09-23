@@ -1,6 +1,6 @@
 .recipe {
   margin-top: 50px;
-  margin-bottom: 50px;/////
+  margin-bottom: 50px;
 }
 .conteiner {
   max-width: 1088px;
@@ -12,14 +12,14 @@
   background-color: var(--yellow-bg-color);
   background-image: url(/recipe-bg.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom left;
   background-size: contain;
 }
 .recipetTitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 77px;
 }
 .title {
   font-weight: 800;
@@ -29,14 +29,15 @@
   color: var(--orange-color);
 }
 .mealTime {
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid var(--primary);
+  border-radius: 20px;
   font-family: "Lobster";
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   text-transform: capitalize;
   text-wrap: pretty;
-  //background-color: var(--recipe-time-bg);
 }
 .ingredientsItems {
   margin-top: 30px;
@@ -60,6 +61,11 @@
   gap: 30px;
 }
 .recipeText {
-  line-height: 25px;
-  text-wrap: pretty
+  text-indent: 8%;
+  line-height: 28px;
+  text-wrap: pretty;
+}
+.recipeText::first-letter {
+  font-size: 130%;
+  color: var(--orange-color);
 }

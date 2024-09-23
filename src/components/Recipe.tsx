@@ -41,7 +41,6 @@ export default function Recipe({ title }: { title: string }) {
           <p className={styles.recipeText}>{recipe.recipeText}</p>
         </div>
       </div>
-      
     </div>
   );
   
