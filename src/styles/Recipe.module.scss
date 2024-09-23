@@ -10,11 +10,10 @@
 .recipeCard {
   padding: 15px;
   background-color: var(--yellow-bg-color);
-  /*background-image: url(/mobile-menu-bg.jpg);
+  background-image: url(/recipe-bg.png);
   background-repeat: no-repeat;
-  background-position: center left;
-  background-size: cover;*/
-  
+  background-position: bottom right;
+  background-size: contain;
 }
 .recipetTitle {
   display: flex;
