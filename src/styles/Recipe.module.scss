@@ -36,7 +36,7 @@
   line-height: 20px;
   text-transform: capitalize;
   text-wrap: pretty;
-  background-color: var(--recipe-time-bg);
+  //background-color: var(--recipe-time-bg);
 }
 .ingredientsItems {
   margin-top: 30px;
@@ -48,7 +48,6 @@
 .ingredientsTitle {
   margin-bottom: 15px;
   line-height: 20px;
-  //color: var(--yellow-bg-color);
   color: var(--background);
 }
 .ingredientsUnit {
