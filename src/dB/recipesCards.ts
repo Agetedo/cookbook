@@ -5,7 +5,7 @@ interface CardType {
   title: string;
   mealTime: string;
   hoveredText: string;
-  ingredients: string[] | [];
+  ingredients: string[];
   recipeText: string;
 }
   
