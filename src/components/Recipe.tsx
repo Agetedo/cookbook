@@ -2,8 +2,8 @@ import { recipesCards } from "../dB/recipesCards";
 import styles from "../styles/Recipe.module.scss";
 
 export default function Recipe({ title }: { title: string }) {
-  const recipesFiltered = recipesCards.filter( episode =>
-    episode.title === title
+  const recipesFiltered = recipesCards.filter( card =>
+    card.title === title
   );
   const recipesList = recipesFiltered.map( recipe =>
     <div key={recipe.id} className={styles.recipeCard}>
