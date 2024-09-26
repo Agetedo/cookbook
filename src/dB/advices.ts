@@ -8,25 +8,25 @@ interface AdvicesType {
   
 export const advices: AdvicesType[] = [{
   id: "adV01",
-  bgImage: "/recipe-card-image01.jpg",
+  bgImage: "",
   description: "Croutons with omelette",
   title: "Helpful advice!",
   adviceText: "111",
 }, {
   id: "adV02",
-  bgImage: "/recipe-card-image02.jpg",
+  bgImage: "",
   description: "Croutons with omelette",
   title: "Helpful advice!",
   adviceText: "222",
 }, {
   id: "adv03",
-  bgImage: "/recipe-card-image03.jpg",
+  bgImage: "",
   description: "Croutons with omelette",
   title: "Helpful advice!",
   adviceText: "333",
 },{
   id: "adv04",
-  bgImage: "/recipe-card-image04.jpg",
+  bgImage: "",
   description: "Higsngsg gsg-sg9u",
   title: "Helpful advice!",
   adviceText: "000",
