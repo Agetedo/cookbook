@@ -222,4 +222,40 @@ export const advices: AdvicesType[] = [{
   description: "Egg on toast",
   title: "Helpful advice!",
   adviceText: "000",
+}, {
+  id: "adv37",
+  bgImage: "",
+  description: "Cheese casserole",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv38",
+  bgImage: "",
+  description: "Cheese casserole",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv39",
+  bgImage: "",
+  description: "Cheese casserole",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv40",
+  bgImage: "",
+  description: "Chicken legs in honey sauce",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv41",
+  bgImage: "",
+  description: "Chicken legs in honey sauce",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv42",
+  bgImage: "",
+  description: "Chicken legs in honey sauce",
+  title: "Helpful advice!",
+  adviceText: "000",
 }];
