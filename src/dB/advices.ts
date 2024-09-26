@@ -294,4 +294,40 @@ export const advices: AdvicesType[] = [{
   description: "Grilled beef steaks",
   title: "Helpful advice!",
   adviceText: "000",
+}, {
+  id: "adv49",
+  bgImage: "",
+  description: "Pancakes with cottage cheese",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv50",
+  bgImage: "",
+  description: "Pancakes with cottage cheese",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv51",
+  bgImage: "",
+  description: "Pancakes with cottage cheese",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv52",
+  bgImage: "",
+  description: "Feta and olives salad",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv53",
+  bgImage: "",
+  description: "Feta and olives salad",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv54",
+  bgImage: "",
+  description: "Feta and olives salad",
+  title: "Helpful advice!",
+  adviceText: "000",
 }];
