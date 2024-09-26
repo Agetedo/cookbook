@@ -402,4 +402,40 @@ export const advices: AdvicesType[] = [{
   description: "Cod with vegetables",
   title: "Helpful advice!",
   adviceText: "000",
+}, {
+  id: "adv67",
+  bgImage: "",
+  description: "Mint lemonade",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv68",
+  bgImage: "",
+  description: "Mint lemonade",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv69",
+  bgImage: "",
+  description: "Mint lemonade",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv70",
+  bgImage: "",
+  description: "Curd cookies",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv71",
+  bgImage: "",
+  description: "Curd cookies",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv72",
+  bgImage: "",
+  description: "Curd cookies",
+  title: "Helpful advice!",
+  adviceText: "000",
 }];
