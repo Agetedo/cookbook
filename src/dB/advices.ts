@@ -96,4 +96,40 @@ export const advices: AdvicesType[] = [{
   description: "Pancakes with honey and blackberries",
   title: "Helpful advice!",
   adviceText: "000",
+}, {
+  id: "adv16",
+  bgImage: "",
+  description: "Pasta with champignons",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv17",
+  bgImage: "",
+  description: "Pasta with champignons",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv18",
+  bgImage: "",
+  description: "Pasta with champignons",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv19",
+  bgImage: "",
+  description: "Grilled shrimp salad",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv20",
+  bgImage: "",
+  description: "Grilled shrimp salad",
+  title: "Helpful advice!",
+  adviceText: "000",
+}, {
+  id: "adv21",
+  bgImage: "",
+  description: "Grilled shrimp salad",
+  title: "Helpful advice!",
+  adviceText: "000",
 }];
