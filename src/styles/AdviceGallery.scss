@@ -1,16 +1,14 @@
-.swiper {
-  width: 100%;
-  height: 100%;
+.swiper {  
+  margin: 50px auto 50px auto;
+  max-width: 1230px;
+  //height: 44vh;////////
+  height: 600px;
 }
 .advice__slide {
-  width: 100%;
-  height: 64vh;/////////по размеру BgImg
+  padding: 40px 60px;////////отрегулировать высоту слайда
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  font-size: 18px;
-  color: #fff;
-  padding: 40px 60px;////////
+  background-position: center center;
 }
 .title {
   font-size: 41px;
