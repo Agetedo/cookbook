@@ -134,22 +134,22 @@ export const advices: AdvicesType[] = [{
   adviceText: "If you're short on time, place frozen shrimp in a bowl of cold tap water, cycling the water every 10 minutes until the shrimp is thawed, which should take less than an hour. Voila, you have defrosted shrimp to grill!",
 }, {
   id: "adv22",
-  bgImage: "",
+  bgImage: "/advice01-recipe-08.jpg",
   description: "Meatloaf with prunes",
   title: "Helpful advice!",
-  adviceText: "000",
+  adviceText: "You can also bake these Meat Rolls. Simple give the breaded rolls a quick sear, and then bake in the oven for 15 mins until the meat is cooked through.",
 }, {
   id: "adv23",
-  bgImage: "",
+  bgImage: "/advice02-recipe-08.jpg",
   description: "Meatloaf with prunes",
   title: "Helpful advice!",
-  adviceText: "000",
+  adviceText: "Let it rest before cutting: After baking the meat roll, let it rest for a few minutes before cutting it into slices. This will allow the juices to redistribute and the meat will be juicier when served.",
 }, {
   id: "adv24",
-  bgImage: "",
+  bgImage: "/advice03-recipe-08.jpg",
   description: "Meatloaf with prunes",
   title: "Helpful advice!",
-  adviceText: "000",
+  adviceText: "Experiment with spices: If you want to add more flavor, try different spices and herbs such as paprika, oregano, thyme or rosemary. Adjust the quantities according to your personal taste.",
 }, {
   id: "adv25",
   bgImage: "",
