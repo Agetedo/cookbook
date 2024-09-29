@@ -224,19 +224,19 @@ export const advices: AdvicesType[] = [{
   adviceText: "It's best to buy good bread that's strong enough to hold the avocado and eggs and other toppings you might like to add. Use something that offers a sturdy base like a thick multi-grain bread.",
 }, {
   id: "adv37",
-  bgImage: "",
+  bgImage: "/advice01-recipe-13.jpg",
   description: "Cheese casserole",
   title: "Helpful advice!",
   adviceText: "000",
 }, {
   id: "adv38",
-  bgImage: "",
+  bgImage: "/advice02-recipe-13.jpg",
   description: "Cheese casserole",
   title: "Helpful advice!",
   adviceText: "000",
 }, {
   id: "adv39",
-  bgImage: "",
+  bgImage: "/advice03-recipe-13.jpg",
   description: "Cheese casserole",
   title: "Helpful advice!",
   adviceText: "000",
