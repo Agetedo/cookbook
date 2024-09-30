@@ -404,19 +404,19 @@ export const advices: AdvicesType[] = [{
   adviceText: "Great additions could include adding some olives along with the capers, or adding some chopped prosciutto along with the onion.",
 }, {
   id: "adv67",
-  bgImage: "",
+  bgImage: "/advice01-recipe-23.jpg",
   description: "Mint lemonade",
   title: "Helpful advice!",
   adviceText: "000",
 }, {
   id: "adv68",
-  bgImage: "",
+  bgImage: "/advice02-recipe-23.jpg",
   description: "Mint lemonade",
   title: "Helpful advice!",
   adviceText: "000",
 }, {
   id: "adv69",
-  bgImage: "",
+  bgImage: "/advice03-recipe-23.jpg",
   description: "Mint lemonade",
   title: "Helpful advice!",
   adviceText: "000",
