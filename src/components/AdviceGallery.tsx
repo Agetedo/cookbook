@@ -18,8 +18,10 @@ export default function AdviceGallery({ description }: { description: string }) 
         {"backgroundImage": `url(${slide.bgImage})`,}
       }
     >
-      <h2 className="title">{slide.title}</h2>
-      <p className="advice__text">{slide.adviceText}</p>
+      <section className="advice__items">
+        <h2 className="title">{slide.title}</h2>
+        <p className="advice__text">{slide.adviceText}</p>
+      </section>
     </SwiperSlide>
   );
   

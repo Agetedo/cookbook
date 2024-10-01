@@ -10,10 +10,13 @@
   background-size: cover;
   background-position: center center;
 }
-.title {
-  font-size: 41px;
-  font-weight: 300;
-  color: var(--yellow-bg-color);
+.advice__items {
+  background-color: var(--start-title-bg);
+  .title {
+    font-size: 41px;
+    font-weight: 300;
+    color: var(--orange-color);
+  }
 }
 .advice__text {
   font-size: 14px;
