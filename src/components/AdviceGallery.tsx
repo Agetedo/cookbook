@@ -1,10 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Pagination, Navigation, Autoplay, } from "swiper/modules";
+import { EffectFade, Pagination, Autoplay, } from "swiper/modules";
 import { advices } from "../dB/advices";
 import "swiper/scss";
 import "swiper/scss/effect-fade";
 import "swiper/scss/pagination";
-import "swiper/scss/navigation";
 import "../styles/AdviceGallery.scss";
 
 export default function AdviceGallery({ description }: { description: string }) {
@@ -27,17 +26,16 @@ export default function AdviceGallery({ description }: { description: string }) 
   
   return (
     <Swiper
-      modules={[EffectFade, Pagination, Navigation, Autoplay]} 
+      modules={[EffectFade, Pagination, Autoplay]} 
       className="advices"
       effect={"fade"}
-      /*autoplay={{
+      autoplay={{
         delay: 2500,
         disableOnInteraction: false,
-      }}*/
+      }}
       pagination={{
         clickable: true,
       }}
-      navigation={true}
     >
       {slideList}
     </Swiper>
