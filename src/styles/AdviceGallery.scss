@@ -1,11 +1,10 @@
-.swiper {  
+.advices {  
   margin: 50px auto 50px auto;
   max-width: 1230px;
-  //height: 44vh;////////
-  height: 600px;
+  height: 63.493vh;
 }
 .advice__slide {
-  padding: 40px 60px;////////отрегулировать высоту слайда
+  padding: 40px 60px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -55,4 +54,21 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+}
+//---@media-advices------------
+@media (hover: hover) and (pointer: fine) {
+  .swiper-pagination-bullet:hover {
+    background: url(../cucumber-slice.png), transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+@media (hover: none) {
+  .swiper-pagination-bullet:active {
+    background: url(../cucumber-slice.png), transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
 }
