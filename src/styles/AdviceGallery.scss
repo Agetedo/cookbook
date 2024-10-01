@@ -26,7 +26,18 @@
   max-width: 487px;
   font-size: 23px;
   line-height: 30px;
-  color: var(--primary);
+  color: var(--white-color);
+}
+.swiper-pagination-fraction, 
+.swiper-pagination-custom, 
+.swiper-horizontal > 
+.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 126px;
+  left: calc(50% - 63px);
+  padding: 3px;
+  background-color: var(--recipe-time-bg);
+  border-radius: 20px;
 }
 .swiper-pagination-bullet {
   z-index: 10;
