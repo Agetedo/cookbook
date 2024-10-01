@@ -29,10 +29,10 @@ export default function AdviceGallery({ description }: { description: string }) 
       modules={[EffectFade, Pagination, Autoplay]} 
       className="advices"
       effect={"fade"}
-      autoplay={{
+      /*autoplay={{
         delay: 2500,
         disableOnInteraction: false,
-      }}
+      }}*/
       pagination={{
         clickable: true,
       }}

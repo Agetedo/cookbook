@@ -270,7 +270,7 @@ export const recipesCards: CardType[] = [{
   id: "reC14",
   linkTo: "/recipe-page14",
   imageSrc: "/recipe-card-image19.jpg",
-  title: "Chicken legs in honey sauce",
+  title: "Chicken in honey sauce",
   mealTime: "Dinner",
   hoveredText: "See recipe now!",
   ingredients: 
