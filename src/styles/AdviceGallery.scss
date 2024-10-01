@@ -15,9 +15,13 @@
   flex-direction: column;
   gap: 20px;
   background-color: var(--start-title-bg);
+  border-radius: 255px 15px 255px 15px / 15px 255px 15px 255px;
+  border: 2px solid var(--yellow-bg-color);
   .title {
-    font-size: 41px;
     font-weight: 800;
+    font-size: 41px;
+    line-height: 43px;
+    text-align: center;
     color: var(--yellow-bg-color);
   }
 }

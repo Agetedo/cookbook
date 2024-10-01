@@ -243,19 +243,19 @@ export const advices: AdvicesType[] = [{
 }, {
   id: "adv40",
   bgImage: "/advice01-recipe-14.jpg",
-  description: "Chicken legs in honey sauce",
+  description: "Chicken in honey sauce",
   title: "Helpful advice!",
   adviceText: "Soy sauce and Chinese cooking wine add salt and a hint of Chinese restaurant flavour into the sauce so it's not just a plain honey sauce. The water component in these largely cooks out when simmered, so it doesn't compromise the crispiness!",
 }, {
   id: "adv41",
   bgImage: "/advice02-recipe-14.jpg",
-  description: "Chicken legs in honey sauce",
+  description: "Chicken in honey sauce",
   title: "Helpful advice!",
   adviceText: "No water – most Honey Chicken sauces include water and cornflour/cornstarch for thickening. Crispy Coating and water are not friends! Give the water a miss.",
 }, {
   id: "adv42",
   bgImage: "/advice03-recipe-14.jpg",
-  description: "Chicken legs in honey sauce",
+  description: "Chicken in honey sauce",
   title: "Helpful advice!",
   adviceText: "For chicken breasts: use breasts, sliced horizontally in half. Sear breast fillets on each side until golden and cooked through (about 6 minutes per side, depending on the thickness of your fillets).",
 }, {
