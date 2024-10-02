@@ -26,9 +26,9 @@ export default function AdviceGallery({ description }: { description: string }) 
   
   return (
     <Swiper
-      modules={[EffectFade, Pagination, Autoplay]} 
+      modules={[/*EffectFade,*/ Pagination, Autoplay]} 
       className="advices"
-      effect={"fade"}
+      //effect={"fade"}
       /*autoplay={{
         delay: 2500,
         disableOnInteraction: false,
