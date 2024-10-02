@@ -27,10 +27,10 @@ export default function AdviceGallery({ description }: { description: string }) 
     <Swiper
       modules={[Pagination, Autoplay]} 
       className="advices"
-      autoplay={{
+      /*autoplay={{
         delay: 2500,
         disableOnInteraction: false,
-      }}
+      }}*/
       loop={true}
       pagination={{
         clickable: true,
