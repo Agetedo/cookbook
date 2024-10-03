@@ -9,11 +9,9 @@ const subscribeText = "Did you like this recipe? To be among the first to receiv
 
 export default function SubscribePortal() {
   return (
-    <Conteiner className="get">
-      <GetText  
-        text={subscribeText}
-      />
-      <GetModal getButtonText={"Subscribe Now!"}/>
+    <Conteiner className={"subscribePortal"}>
+      <GetText text={subscribeText} />
+      <GetModal subscribeButtonText={"Subscribe Now!"}/>
     </Conteiner>
   );
 }
@@ -95,13 +93,13 @@ function ModalContent({ onClose }: ModalContentClose) {
           <img src={closeIcon} alt={"close icon"} />
         </button>
 
-        <GetForm buttonText={"SIGN UP"}/>
+        <GetForm buttonText={"SEND"}/>
       </div>
     </div>
   );
 }
 
-function GetModal({ getButtonText }: { getButtonText: string }) {
+function GetModal({ subscribeButtonText }: { subscribeButtonText: string }) {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
@@ -114,9 +112,9 @@ function GetModal({ getButtonText }: { getButtonText: string }) {
   }, [showModal]);
 
   return (
-    <div className="modal-container">
-      <button className="get-button" onClick={() => setShowModal(true)}>
-        {getButtonText}
+    <div className="modalContainer">
+      <button className="subscribeButton" onClick={() => setShowModal(true)}>
+        {subscribeButtonText}
       </button>
       {showModal && createPortal(
         <ModalContent onClose={() => setShowModal(false)} />,
