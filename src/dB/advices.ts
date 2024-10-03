@@ -8,7 +8,7 @@ interface AdvicesType {
   
 export const advices: AdvicesType[] = [{
   id: "adV01",
-  bgImage: "/advice01-recipe-01.jpg",
+  bgImage: "/advice03-recipe-01.jpg",
   description: "Croutons with omelette",
   title: "Helpful advice!",
   adviceText: "Why are my omelette not fluffy? Here are some reasons your omelette might not be fluffy. Eggs aren't fully beaten. You need to whip the eggs until the mixture is completely homogenous (uniform throughout). A dirty bowl. If you whip your eggs in an oily, dirty bowl, it will cause them to not be fluffy when cooked. A pan that's too large. If you use a pan that is larger than 8″ your omelette will be too thin and not fluffy.",
@@ -20,7 +20,7 @@ export const advices: AdvicesType[] = [{
   adviceText: "If you want to make sure the outside of your omelet looks extra smooth and glossy, paint it with some butter while it's still hot. This will help you get the professional-looking omelet you crave.",
 }, {
   id: "adv03",
-  bgImage: "/advice03-recipe-01.jpg",
+  bgImage: "/advice01-recipe-01.jpg",
   description: "Croutons with omelette",
   title: "Helpful advice!",
   adviceText: "Unless you're making a soufflé omelet, you're not whipping eggs to stiff peaks for your breakfast meal. It can be tempting to take things to the opposite extreme and just barely beat the eggs before adding them to the pan. While it might not seem like a big deal, your omelets will come out better if you thoroughly whip the eggs.",
