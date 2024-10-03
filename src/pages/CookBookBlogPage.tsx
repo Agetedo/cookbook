@@ -3,7 +3,7 @@
 export default function CookBookBlogPage() {
   return (
     <>
-      Collections
+      BLOG
     </>
   );
 }
