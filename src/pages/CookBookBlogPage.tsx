@@ -1,6 +1,6 @@
 //import Contact from "../components/contact/Contact.tsx";
 
-export default function CollectionsPage() {
+export default function CookBookBlogPage() {
   return (
     <>
       Collections
