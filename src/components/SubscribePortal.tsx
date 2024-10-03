@@ -4,12 +4,12 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import Conteiner from "./Conteiner";
 import logoIcon from "/logo-image.png";
 import closeIcon from "/modal-close-icon.svg";
-import "../styles/SubscribePortal.scss";
+import styles from "../styles/SubscribePortal.module.scss";
 const subscribeText = "Did you like this recipe? To be among the first to receive new recipes directly to your email, register on the site and confirm your subscription. CookBook has a large archive of thematic newsletters with collections of recipes for any occasion or holiday.";
 
 export default function SubscribePortal() {
   return (
-    <Conteiner className={"subscribePortal"}>
+    <Conteiner className={styles.subscribePortal}>
       <SubscribeText text={subscribeText} />
       <SubscribeModal subscribeButtonText={"Receive recipes!"}/>
     </Conteiner>
@@ -18,7 +18,7 @@ export default function SubscribePortal() {
 
 function SubscribeText({ text }: { text: string | typeof subscribeText }) {
   return(
-    <><p className="subscribeText">{text}</p></>
+    <><p className={styles.subscribeText}>{text}</p></>
   );
 }
 
@@ -29,8 +29,8 @@ interface ModalHeadingContent {
 function ModalHeading({ imgSrc, text }: ModalHeadingContent) {
   return (
     <>
-      <img src={imgSrc} alt={"CookBook logo"} className="image"/>
-      <p className="modalText">{text}</p>
+      <img src={imgSrc} alt={"CookBook logo"} className={styles.image} />
+      <p className={styles.modalText}>{text}</p>
     </>
   );
 }
@@ -51,8 +51,8 @@ function SubscribeForm({ buttonText }: { buttonText: string }) {
   };
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="subscribeForm">
-      <fieldset className="formItems">
+    <form onSubmit={handleSubmit(onSubmit)} className={styles.subscribeForm}>
+      <fieldset className={styles.formItems}>
         <input 
           defaultValue={intialValues.email}
           placeholder="contact@minimal.com"
@@ -72,7 +72,7 @@ function SubscribeForm({ buttonText }: { buttonText: string }) {
       </fieldset>
 
       {errors.email?.message && (
-        <p role="alert" className="error">{errors.email.message}</p>
+        <p role="alert" className={styles.error}>{errors.email.message}</p>
       )}
     </form>
   );
@@ -83,13 +83,13 @@ type ModalContentClose = {
 };
 function ModalContent({ onClose }: ModalContentClose) {
   return (
-    <div className="modal">
-      <div className="content">
+    <div className={styles.modal}>
+      <div className={styles.content}>
         <ModalHeading 
           imgSrc={logoIcon}
           text={"Get the latest on food trends, recipes, holiday ideas, and easy-to-make meals!"}
         />
-        <button className="modalClose" onClick={onClose}>Close
+        <button className={styles.modalClose} onClick={onClose}>Close
           <img src={closeIcon} alt={"close icon"} />
         </button>
 
@@ -112,8 +112,8 @@ function SubscribeModal({ subscribeButtonText }: { subscribeButtonText: string }
   }, [showModal]);
 
   return (
-    <div className="modalWrapper">
-      <button className="subscribeButton" onClick={() => setShowModal(true)}>
+    <div className={styles.modalWrapper}>
+      <button className={styles.subscribeButton} onClick={() => setShowModal(true)}>
         {subscribeButtonText}
       </button>
       {showModal && createPortal(
