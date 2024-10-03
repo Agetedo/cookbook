@@ -6,11 +6,11 @@
   background-repeat: repeat-x;
   background-position: bottom;
 }
-.get__text {
+.subscribeText {
   font-size: 18px;
   line-height: 29px;
   text-align: center;
-  color: var(--shadow-grey-color);
+  color: var(--shadow-grey-color);/////
   text-wrap: pretty;
 }
 .modalContainer {
@@ -58,11 +58,11 @@
   border-radius: 8px;
   animation-name: animatetop;
   animation-duration: 1s;
-  .modal-heading__image {
+  .modalHeadingImage {
     margin: 0 auto;
   }
 }
-.get-modal__text {
+.subscribeModalText {
   margin-top: 15px;
   padding: 0px 10px 0px 10px;
   font-size: 23px;
@@ -183,7 +183,7 @@
     padding-top: calc(30px + (64 - 30)*((100vw - 320px)/(970 - 320)));
     //padding-bottom: calc(28px + (96 - 28)*((100vw - 320px)/(970 - 320)));// 96
   }
-  .get__text {
+  .subscribeText {
     font-size: calc(14px + (18 - 14)*((100vw - 320px)/(970 - 320)));
     line-height: calc(24px + (29 - 24)*((100vw - 320px)/(970 - 320)));
   }
@@ -222,7 +222,7 @@
     width: calc(300px + (502 - 300)*((100vw - 320px)/(768 - 320)));
     padding-bottom: calc(51px + (88 - 51)*((100vw - 320px)/(768 - 320)));
   }
-  .get-modal__text {
+  .subscribeModalText {
     margin-top: calc(9px + (15 - 9)*((100vw - 320px)/(768 - 320)));
     font-size: calc(14px + (23 - 14)*((100vw - 320px)/(768 - 320)));
     line-height: calc(24px + (36 - 24)*((100vw - 320px)/(768 - 320)));

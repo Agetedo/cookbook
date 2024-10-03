@@ -10,15 +10,15 @@ const subscribeText = "Did you like this recipe? To be among the first to receiv
 export default function SubscribePortal() {
   return (
     <Conteiner className={"subscribePortal"}>
-      <GetText text={subscribeText} />
-      <GetModal subscribeButtonText={"Subscribe Now!"}/>
+      <SubscribeText text={subscribeText} />
+      <SubscribeModal subscribeButtonText={"Subscribe Now!"}/>
     </Conteiner>
   );
 }
 
-function GetText({ text }: { text: string | typeof subscribeText}) {
+function SubscribeText({ text }: { text: string | typeof subscribeText}) {
   return(
-    <><p className="get__text">{text}</p></>
+    <><p className="subscribeText">{text}</p></>
   );
 }
 
@@ -29,8 +29,8 @@ interface ModalHeadingContent {
 function ModalHeading({ imgSrc, text }: ModalHeadingContent) {
   return (
     <>
-      <img src={imgSrc} alt={"CookBook logo"} className="modal-heading__image"/>
-      <p className="get-modal__text">{text}</p>
+      <img src={imgSrc} alt={"CookBook logo"} className="modalHeadingImage"/>
+      <p className="subscribeModalText">{text}</p>
     </>
   );
 }
@@ -99,7 +99,7 @@ function ModalContent({ onClose }: ModalContentClose) {
   );
 }
 
-function GetModal({ subscribeButtonText }: { subscribeButtonText: string }) {
+function SubscribeModal({ subscribeButtonText }: { subscribeButtonText: string }) {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
@@ -123,4 +123,3 @@ function GetModal({ subscribeButtonText }: { subscribeButtonText: string }) {
     </div>
   );
 }
-
