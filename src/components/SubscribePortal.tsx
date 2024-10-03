@@ -11,12 +11,12 @@ export default function SubscribePortal() {
   return (
     <Conteiner className={"subscribePortal"}>
       <SubscribeText text={subscribeText} />
-      <SubscribeModal subscribeButtonText={"Subscribe Now!"}/>
+      <SubscribeModal subscribeButtonText={"Receive recipes!"}/>
     </Conteiner>
   );
 }
 
-function SubscribeText({ text }: { text: string | typeof subscribeText}) {
+function SubscribeText({ text }: { text: string | typeof subscribeText }) {
   return(
     <><p className="subscribeText">{text}</p></>
   );
@@ -29,8 +29,8 @@ interface ModalHeadingContent {
 function ModalHeading({ imgSrc, text }: ModalHeadingContent) {
   return (
     <>
-      <img src={imgSrc} alt={"CookBook logo"} className="modalHeadingImage"/>
-      <p className="subscribeModalText">{text}</p>
+      <img src={imgSrc} alt={"CookBook logo"} className="image"/>
+      <p className="modalText">{text}</p>
     </>
   );
 }
@@ -52,7 +52,7 @@ function SubscribeForm({ buttonText }: { buttonText: string }) {
   
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="subscribeForm">
-      <fieldset className="subscribeFormItems">
+      <fieldset className="formItems">
         <input 
           defaultValue={intialValues.email}
           placeholder="contact@minimal.com"
@@ -83,7 +83,7 @@ type ModalContentClose = {
 };
 function ModalContent({ onClose }: ModalContentClose) {
   return (
-    <div className="subscribeModal">
+    <div className="modal">
       <div className="content">
         <ModalHeading 
           imgSrc={logoIcon}
@@ -112,7 +112,7 @@ function SubscribeModal({ subscribeButtonText }: { subscribeButtonText: string }
   }, [showModal]);
 
   return (
-    <div className="modalContainer">
+    <div className="modalWrapper">
       <button className="subscribeButton" onClick={() => setShowModal(true)}>
         {subscribeButtonText}
       </button>

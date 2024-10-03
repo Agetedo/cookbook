@@ -1,39 +1,52 @@
 .subscribePortal {
-  margin-top: 50px;
-  padding-top: 64px;
-  padding-bottom: 96px;
+  margin-top: 128px;
+  padding-bottom: 120px;
   background-image: url(/subscribe-portal-bg.png);
-  background-repeat: repeat-x;
-  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 .subscribeText {
-  font-size: 18px;
-  line-height: 29px;
+  font-size: 30px;
+  line-height: 49px;
+  font-weight: 800;
   text-align: center;
-  color: var(--shadow-grey-color);/////
   text-wrap: pretty;
+  background-image: linear-gradient(35deg, var(--orange-color), var(--primary));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shadow-drop-center 6s cubic-bezier(.215,.61,.355,1) infinite both;
 }
-.modalContainer {
+@keyframes text-shadow-drop-center {
+  30% {
+    text-shadow: 0 0 0px var(--primary);
+  }
+  70% {
+    text-shadow: 0 0 0px var(--orange-color);
+  }
+}
+.modalWrapper {
   margin-top: 40px;
   text-align: center
 }
 .subscribeButton {
+  border: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 13px 34px;
-  border: 1px solid var(--shadow-grey-color);///////////////
   background-color: var(--yellow-bg-color);
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 7px 2px var(--orange-color);
   font-size: 16px;
   line-height: 20px;
+  font-weight: 600;
   text-align: center;
   text-transform: capitalize;
-  color: var(--shadow-grey-color);
+  color: var(--primary);
   cursor: pointer;
   transition: all 1s ease;
 }
-.subscribeModal {
+.modal {
   position: fixed;
   z-index: 10;
   padding-top: 12%;
@@ -42,7 +55,7 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,.5);
+  background-color: var(--modal-bg-shadow);
   cursor: default;
 }
 .content {
@@ -58,11 +71,11 @@
   border-radius: 8px;
   animation-name: animatetop;
   animation-duration: 1s;
-  .modalHeadingImage {
+  .image {
     margin: 0 auto;
   }
 }
-.subscribeModalText {
+.modalText {
   margin-top: 15px;
   padding: 0px 10px 0px 10px;
   font-size: 23px;
@@ -79,8 +92,8 @@
   display: inline-flex;
   align-items: center;
   gap: 20px;
-  background-color: var(--mint-color);
   text-transform: lowercase;
+  background-color: transparent;
   color: var(--background);
   border: none;
   cursor: pointer;
@@ -130,7 +143,7 @@
     transition: all 1s ease-in-out;
   }
 }
-.subscribeFormItems {
+.formItems {
   display: flex;
   justify-content: center;
 }
@@ -141,7 +154,7 @@
   text-align: center;
   color: var(--error-message-color);
 }
-//---@media-get----------------------
+//---@media-subscribePortal----------------------
 @media (hover: hover) and (pointer: fine) {
   .subscribeButton:hover {
     box-shadow: none;
@@ -164,12 +177,12 @@
 }
 @media (hover: hover) and (pointer: fine) {
   .subscribeForm button:hover {
-    color: var(--shadow-grey-color);
+    color: var(--primary);
   }
 }
 @media (hover: none) {
   .subscribeForm button:active {
-    color: var(--shadow-grey-color);
+    color: var(--primary);
   }
 }
 @media(max-width: 1440px) {
@@ -179,17 +192,17 @@
 }
 @media(max-width: 970px) {
   .subscribePortal {
-    padding-top: calc(30px + (64 - 30)*((100vw - 320px)/(970 - 320)));
-    //padding-bottom: calc(28px + (96 - 28)*((100vw - 320px)/(970 - 320)));// 96
+    margin-top: 128px;////
+    //padding-bottom: calc(28px + (120 - 28)*((100vw - 320px)/(970 - 320)));// 120
   }
   .subscribeText {
-    font-size: calc(14px + (18 - 14)*((100vw - 320px)/(970 - 320)));
-    line-height: calc(24px + (29 - 24)*((100vw - 320px)/(970 - 320)));
+    font-size: calc(14px + (30 - 14)*((100vw - 320px)/(970 - 320)));
+    line-height: calc(24px + (49 - 24)*((100vw - 320px)/(970 - 320)));
   }
-  .modalContainer {
+  .modalWrapper {
     margin-top: calc(17px + (40 - 17)*((100vw - 320px)/(970 - 320)));
   }
-  .subscribeButto {
+  .subscribeButton {
     padding-top: calc(8px + (13 - 8)*((100vw - 320px)/(970 - 320)));
     padding-right: calc(23px + (34 - 23)*((100vw - 320px)/(970 - 320)));
     padding-bottom: calc(8px + (13 - 8)*((100vw - 320px)/(970 - 320)));
@@ -199,7 +212,7 @@
   }
 }
 @media(max-width: 768px) {
-  .subscribeModal {
+  .modal {
     padding-top: 31%;
   }
   .subscribeForm input {
@@ -221,7 +234,7 @@
     width: calc(300px + (502 - 300)*((100vw - 320px)/(768 - 320)));
     padding-bottom: calc(51px + (88 - 51)*((100vw - 320px)/(768 - 320)));
   }
-  .subscribeModalText {
+  .modalText {
     margin-top: calc(9px + (15 - 9)*((100vw - 320px)/(768 - 320)));
     font-size: calc(14px + (23 - 14)*((100vw - 320px)/(768 - 320)));
     line-height: calc(24px + (36 - 24)*((100vw - 320px)/(768 - 320)));
@@ -239,7 +252,7 @@
   }
 }
 @media (orientation: landscape) and (max-height: 500px)  {
-  .subscribeModal {
+  .modal {
     padding-top: 11%;
   }
   .content {
@@ -248,13 +261,13 @@
   }
 }
 @media (orientation: landscape) and (max-height: 375px)  {
-  .subscribeModal {
+  .modal {
     padding-top: 6%;
     padding-bottom: 50px;
   }
 }
 @media (orientation: landscape) and (max-height: 320px) and (max-width: 480px) {
-  .subscribeModal {
+  .modal {
     padding-top: 14%;
   }
 }
