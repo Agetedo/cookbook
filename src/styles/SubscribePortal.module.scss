@@ -189,29 +189,26 @@
   .content {
     width: 502px;
   }
-}
-@media(max-width: 970px) {
   .subscribePortal {
-    margin-top: 128px;////
-    //padding-bottom: calc(28px + (120 - 28)*((100vw - 320px)/(970 - 320)));// 120
-  }
-  .subscribeText {
-    font-size: calc(14px + (30 - 14)*((100vw - 320px)/(970 - 320)));
-    line-height: calc(24px + (49 - 24)*((100vw - 320px)/(970 - 320)));
-  }
-  .modalWrapper {
-    margin-top: calc(17px + (40 - 17)*((100vw - 320px)/(970 - 320)));
-  }
-  .subscribeButton {
-    padding-top: calc(8px + (13 - 8)*((100vw - 320px)/(970 - 320)));
-    padding-right: calc(23px + (34 - 23)*((100vw - 320px)/(970 - 320)));
-    padding-bottom: calc(8px + (13 - 8)*((100vw - 320px)/(970 - 320)));
-    padding-left: calc(23px + (34 - 23)*((100vw - 320px)/(970 - 320)));
-    font-size: calc(11px + (16 - 11)*((100vw - 320px)/(970 - 320)));
-    line-height: calc(16px + (20 - 16)*((100vw - 320px)/(970 - 320)));
+    margin-top: calc(60px + (128 - 60)*((100vw - 320px)/(1440 - 320)));
   }
 }
 @media(max-width: 768px) {
+  .modalWrapper {
+    margin-top: calc(17px + (40 - 17)*((100vw - 320px)/(768 - 320)));
+  }
+  .subscribeText {
+    font-size: calc(14px + (30 - 14)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(24px + (49 - 24)*((100vw - 320px)/(768 - 320)));
+  }
+  .subscribeButton {
+    padding-top: calc(8px + (13 - 8)*((100vw - 320px)/(768 - 320)));
+    padding-right: calc(23px + (34 - 23)*((100vw - 320px)/(768 - 320)));
+    padding-bottom: calc(8px + (13 - 8)*((100vw - 320px)/(768 - 320)));
+    padding-left: calc(23px + (34 - 23)*((100vw - 320px)/(768 - 320)));
+    font-size: calc(11px + (16 - 11)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(16px + (20 - 16)*((100vw - 320px)/(768 - 320)));
+  }
   .modal {
     padding-top: 31%;
   }
