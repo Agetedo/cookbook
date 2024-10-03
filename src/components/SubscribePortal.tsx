@@ -38,7 +38,7 @@ function ModalHeading({ imgSrc, text }: ModalHeadingContent) {
 type InputEmail = {
   email: string;
 }
-function GetForm({ buttonText }: { buttonText: string }) {
+function SubscribeForm({ buttonText }: { buttonText: string }) {
   const { 
     register, 
     handleSubmit, 
@@ -51,8 +51,8 @@ function GetForm({ buttonText }: { buttonText: string }) {
   };
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)} id="form1">
-      <fieldset className="get-form__items">
+    <form onSubmit={handleSubmit(onSubmit)} className="subscribeForm">
+      <fieldset className="subscribeFormItems">
         <input 
           defaultValue={intialValues.email}
           placeholder="contact@minimal.com"
@@ -72,7 +72,7 @@ function GetForm({ buttonText }: { buttonText: string }) {
       </fieldset>
 
       {errors.email?.message && (
-        <p role="alert" id="getFormError">{errors.email.message}</p>
+        <p role="alert" className="error">{errors.email.message}</p>
       )}
     </form>
   );
@@ -83,17 +83,17 @@ type ModalContentClose = {
 };
 function ModalContent({ onClose }: ModalContentClose) {
   return (
-    <div className="get-modal">
-      <div className="get-modal__content">
+    <div className="subscribeModal">
+      <div className="content">
         <ModalHeading 
           imgSrc={logoIcon}
           text={"Get the latest on food trends, recipes, holiday ideas, and easy-to-make meals!"}
         />
-        <button id="modalClose" onClick={onClose}>Close
+        <button className="modalClose" onClick={onClose}>Close
           <img src={closeIcon} alt={"close icon"} />
         </button>
 
-        <GetForm buttonText={"SEND"}/>
+        <SubscribeForm buttonText={"SEND"}/>
       </div>
     </div>
   );
