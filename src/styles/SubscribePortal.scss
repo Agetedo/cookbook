@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   padding: 13px 34px;
-  border: 1px solid var(--shadow-grey-color);
+  border: 1px solid var(--shadow-grey-color);///////////////
   background-color: var(--yellow-bg-color);
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25);
   font-size: 16px;
@@ -33,7 +33,7 @@
   cursor: pointer;
   transition: all 1s ease;
 }
-.get-modal {
+.subscribeModal {
   position: fixed;
   z-index: 10;
   padding-top: 12%;
@@ -45,7 +45,7 @@
   background-color: rgba(0,0,0,.5);
   cursor: default;
 }
-.get-modal__content {
+.content {
   position: relative;
   padding-top: 64px;
   padding-bottom: 88px;
@@ -70,7 +70,7 @@
   text-align: center;
   text-wrap: pretty;
 }
-#modalClose {
+.modalClose {
   position: absolute; 
   top: 15px; 
   right: 15px;
@@ -96,7 +96,7 @@
     opacity: 1;
   }
 }
-#form1 {
+.subscribeForm {
   margin-top: 20px;
   input {
     width: 60%;
@@ -130,13 +130,12 @@
     transition: all 1s ease-in-out;
   }
 }
-.get-form__items {
+.subscribeFormItems {
   display: flex;
   justify-content: center;
 }
-#getFormError {
+.error {
   margin-top: 12px;
-  font-family: "Montserrat";
   font-size: 15px;
   line-height: 20px;
   text-align: center;
@@ -154,27 +153,27 @@
   }
 }
 @media (hover: hover) and (pointer: fine) {
-  #modalClose:hover {
+  .modalClose:hover {
     color: var(--primary);
   }
 }
 @media (hover: none) {
-  #modalClose:active {
+  .modalClose:active {
     color: var(--primary);
   }
 }
 @media (hover: hover) and (pointer: fine) {
-  #form1 button:hover {
+  .subscribeForm button:hover {
     color: var(--shadow-grey-color);
   }
 }
 @media (hover: none) {
-  #form1 button:active {
+  .subscribeForm button:active {
     color: var(--shadow-grey-color);
   }
 }
 @media(max-width: 1440px) {
-  .get-modal__content {
+  .content {
     width: 502px;
   }
 }
@@ -190,7 +189,7 @@
   .modalContainer {
     margin-top: calc(17px + (40 - 17)*((100vw - 320px)/(970 - 320)));
   }
-  .get-button {
+  .subscribeButto {
     padding-top: calc(8px + (13 - 8)*((100vw - 320px)/(970 - 320)));
     padding-right: calc(23px + (34 - 23)*((100vw - 320px)/(970 - 320)));
     padding-bottom: calc(8px + (13 - 8)*((100vw - 320px)/(970 - 320)));
@@ -200,25 +199,25 @@
   }
 }
 @media(max-width: 768px) {
-  .get-modal {
+  .subscribeModal {
     padding-top: 31%;
   }
-  #form1 input {
+  .subscribeForm input {
     font-size: calc(13px + (15 - 13)*((100vw - 320px)/(768 - 320)));
     line-height: calc(13px + (15 - 13)*((100vw - 320px)/(768 - 320)));
     padding: calc(9px + (15 - 9)*((100vw - 320px)/(768 - 320)));
   }
-  #form2::placeholder {
+  .subscribeForm::placeholder {
     font-size: calc(13px + (15 - 13)*((100vw - 320px)/(768 - 320)));
     line-height: calc(13px + (15 - 13)*((100vw - 320px)/(768 - 320)));
   }
-  #form1 button {
+  .subscribeForm button {
     padding-top: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320)));
     padding-bottom: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320)));
     font-size: calc(11px + (14 - 11)*((100vw - 320px)/(768 - 320)));
     line-height: calc(11px + (14 - 11)*((100vw - 320px)/(768 - 320)));
   }
-  .get-modal__content {
+  .content {
     width: calc(300px + (502 - 300)*((100vw - 320px)/(768 - 320)));
     padding-bottom: calc(51px + (88 - 51)*((100vw - 320px)/(768 - 320)));
   }
@@ -227,35 +226,35 @@
     font-size: calc(14px + (23 - 14)*((100vw - 320px)/(768 - 320)));
     line-height: calc(24px + (36 - 24)*((100vw - 320px)/(768 - 320)));
   }
-  #modalClose {
+  .modalClose {
     gap: calc(10px + (20 - 10)*((100vw - 320px)/(768 - 320)));
     font-size: calc(11px + (15 - 11)*((100vw - 320px)/(768 - 320)));
     img {
       width: calc(11px + (24 - 11)*((100vw - 320px)/(768 - 320)));
     }
   }
-  #getFormError {
+  .error {
     font-size: calc(10px + (15 - 10)*((100vw - 320px)/(768 - 320)));
     line-height: calc(15px + (20 - 15)*((100vw - 320px)/(768 - 320)));
   }
 }
 @media (orientation: landscape) and (max-height: 500px)  {
-  .get-modal {
+  .subscribeModal {
     padding-top: 11%;
   }
-  .get-modal__content {
+  .content {
     padding-top: 40px;
     padding-bottom: 37px;
   }
 }
 @media (orientation: landscape) and (max-height: 375px)  {
-  .get-modal {
+  .subscribeModal {
     padding-top: 6%;
     padding-bottom: 50px;
   }
 }
 @media (orientation: landscape) and (max-height: 320px) and (max-width: 480px) {
-  .get-modal {
+  .subscribeModal {
     padding-top: 14%;
   }
 }
