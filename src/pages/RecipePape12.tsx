@@ -5,8 +5,8 @@ import SubscribePortal from "../components/SubscribePortal";
 export default function RecipePage12() {
   return (
     <>
-      <Recipe title={"Egg on toast"} />
       <AdviceGallery description={"Egg on toast"} />
+      <Recipe title={"Egg on toast"} />
       <SubscribePortal />
     </>
   );

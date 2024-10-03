@@ -5,8 +5,8 @@ import SubscribePortal from "../components/SubscribePortal";
 export default function RecipePage25() {
   return (
     <>
-      <Recipe title={"Meatballs in tomato sauce"} />
       <AdviceGallery description={"Meatballs in tomato sauce"} />
+      <Recipe title={"Meatballs in tomato sauce"} />
       <SubscribePortal />
     </>
   );

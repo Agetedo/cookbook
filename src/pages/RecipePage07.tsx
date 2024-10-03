@@ -5,8 +5,8 @@ import SubscribePortal from "../components/SubscribePortal";
 export default function RecipePage07() {
   return (
     <>
-      <Recipe title={"Grilled shrimp salad"} />
       <AdviceGallery description={"Grilled shrimp salad"} />
+      <Recipe title={"Grilled shrimp salad"} />
       <SubscribePortal />
     </>
   );
