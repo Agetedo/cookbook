@@ -1,7 +1,10 @@
-.get {
-  background-color: var(--yellow-bg-color);
+.subscribePortal {
+  margin-top: 50px;
   padding-top: 64px;
-  padding-bottom: 61px;
+  padding-bottom: 96px;
+  background-image: url(/subscribe-portal-bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 .get__text {
   font-size: 18px;
@@ -10,11 +13,11 @@
   color: var(--shadow-grey-color);
   text-wrap: pretty;
 }
-.modal-container {
+.modalContainer {
   margin-top: 40px;
   text-align: center
 }
-.get-button {
+.subscribeButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +50,10 @@
   padding-top: 64px;
   padding-bottom: 88px;
   margin: auto;
-  background-color: rgb(170, 115, 162);
+  background-image: url(/mobile-menu-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
   width: 34.8%;
   border-radius: 8px;
   animation-name: animatetop;
@@ -58,11 +64,11 @@
 }
 .get-modal__text {
   margin-top: 15px;
-  font-family: "Montserrat";
+  padding: 0px 10px 0px 10px;
   font-size: 23px;
   line-height: 36px;
   text-align: center;
-  text-transform: uppercase;
+  text-wrap: pretty;
 }
 #modalClose {
   position: absolute; 
@@ -75,7 +81,7 @@
   gap: 20px;
   background-color: var(--mint-color);
   text-transform: lowercase;
-  color: var(--white-color);
+  color: var(--background);
   border: none;
   cursor: pointer;
   transition: all 1s ease; 
@@ -96,13 +102,14 @@
     width: 60%;
     padding: 15px;
     outline-style: none;
-    background-color: inherit;
-    border: 1px solid var(--yellow-bg-color);
+    background-color: var(--background);
+    border: 1px solid var(--orange-color);
     border-right: none;
     border-radius: 8px 0 0 8px;
+    color: var(--primary);
   }
   ::placeholder {
-    color: var(--placeholder-grey-color);
+    color: var(--primary);
   }
   button {
     width: 30%;
@@ -113,12 +120,12 @@
     padding: 22px 47px;
     border: none;
     border-radius: 0 8px 8px 0;
-    background-color: var(--yellow-bg-color);
+    background-color: var(--orange-color);
     font-size: 14px;
     line-height: 14px;
     text-align: center;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: var(--background);
     cursor: pointer;
     transition: all 1s ease-in-out;
   }
@@ -137,23 +144,23 @@
 }
 //---@media-get----------------------
 @media (hover: hover) and (pointer: fine) {
-  .get-button:hover {
+  .subscribeButton:hover {
     box-shadow: none;
   }
 }
 @media (hover: none) {
-  .get-button:active {
+  .subscribeButton:active {
     box-shadow: none;
   }
 }
 @media (hover: hover) and (pointer: fine) {
   #modalClose:hover {
-    color: var(--shadow-grey-color);
+    color: var(--primary);
   }
 }
 @media (hover: none) {
   #modalClose:active {
-    color: var(--shadow-grey-color);
+    color: var(--primary);
   }
 }
 @media (hover: hover) and (pointer: fine) {
@@ -172,15 +179,15 @@
   }
 }
 @media(max-width: 970px) {
-  .get {
+  .subscribePortal {
     padding-top: calc(30px + (64 - 30)*((100vw - 320px)/(970 - 320)));
-    padding-bottom: calc(28px + (61 - 28)*((100vw - 320px)/(970 - 320)));
+    //padding-bottom: calc(28px + (96 - 28)*((100vw - 320px)/(970 - 320)));// 96
   }
   .get__text {
     font-size: calc(14px + (18 - 14)*((100vw - 320px)/(970 - 320)));
     line-height: calc(24px + (29 - 24)*((100vw - 320px)/(970 - 320)));
   }
-  .modal-container {
+  .modalContainer {
     margin-top: calc(17px + (40 - 17)*((100vw - 320px)/(970 - 320)));
   }
   .get-button {
