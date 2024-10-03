@@ -35,7 +35,7 @@ export default function Header() {
                 </NavLink>
               </li>
               <li className="menu__item">
-                <NavLink to={PathConstants.COLLECTIONSPAGE} className={({ isActive, isPending }) =>
+                <NavLink to={PathConstants.COOKBOOKBLOGPAGE} className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active" : ""}>CookBook Blog
                 </NavLink>
               </li>
