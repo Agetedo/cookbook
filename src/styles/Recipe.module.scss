@@ -8,7 +8,6 @@
 }
 .recipeCard {
   padding: 15px;
-  background-color: var(--yellow-bg-color);
   background-image: url(/recipe-bg.png);
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -31,6 +30,7 @@
 }
 .mealTime {
   padding: 5px 10px 5px 10px;
+  background-color: var(--yellow-bg-color);
   border: 1px solid var(--primary);
   border-radius: 20px;
   font-family: "Lobster";

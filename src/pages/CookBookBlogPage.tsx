@@ -1,9 +1,9 @@
-//import Contact from "../components/contact/Contact.tsx";
+import BlogHeading from "../components/BlogHeading";
 
 export default function CookBookBlogPage() {
   return (
     <>
-      BLOG
+      <BlogHeading />
     </>
   );
 }
