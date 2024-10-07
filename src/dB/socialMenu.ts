@@ -16,7 +16,7 @@ export const socialMenu: Social[] = [{
   id: "fSm03",
   imgSrc: "/social-drive-icon.png",
   linkTo: "https://www.google.com/",
-},{
+}, {
   id: "fSm04",
   imgSrc: "/social-codepen-icon.png",
   linkTo: "https://codepen.io/", 

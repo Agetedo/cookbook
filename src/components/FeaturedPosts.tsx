@@ -7,6 +7,7 @@ import mainPostImage03 from "/main-post-image03.jpg";
 import { Link } from "react-router-dom";
 import PathConstants from "../routes/pathConstants";
 import arrowLink from "/pepicons-arrow.png";
+import { featuredPosts } from "../dB/featuredPosts";
 import "swiper/scss";
 import "swiper/scss/effect-fade";
 import "../styles/FeaturedPosts.scss";
@@ -18,16 +19,7 @@ export default function FeaturedPosts() {
       <FeaturedPostsTitle 
         title={"Featured blog posts"} 
       />
-      <div className="posts__items">
-        <MainPost 
-          mealTime={"Lunch 🍽 Dinner"} 
-          title={"Your pasta questions, answered"} 
-          text={pastaText} 
-          readMoreLink={"Read more"}          
-        />
-        <S />
-      </div>
-      
+      <FeaturedPostsItems />
     </Conteiner>
   );
 }
@@ -65,15 +57,45 @@ function MainPost({ mealTime, title, text, readMoreLink }: MainPostProps){
       <span className="meal-time">{mealTime}</span>
       <h3 className="main-post__title">{title}</h3>
       <p className="main-post__text">{text}</p>
-      <Link to={PathConstants.STARTPAGE} className="main-post__link">
+      <Link to={PathConstants.STARTPAGE} className="post__link">
         {readMoreLink}
         <img src={arrowLink} alt="#" />
       </Link>
     </div>
   );
 }
-function S(){
+
+function Post(){
+  const featuredPostList = featuredPosts.map( post =>
+    <div key={post.id} className="post__content">
+      <img src={post.imageSrc} alt={post.imageAlt} />
+      <section>
+        <span className="post__time">{post.mealTime}</span>
+        <h2 className="post__title">{post.title}</h2>
+        <p className="post__preview">{post.text}</p>
+        <Link to={post.linkTo} className="post__link">
+          {post.readMoreText}
+          <img src={post.arrowLink} alt="#" />
+        </Link>
+      </section>
+    </div>
+  );
+
   return(
-    <div className="s-post">SIDE POSTS</div>
+    <div className="posts__list">{featuredPostList}</div>
+  );
+}
+
+function FeaturedPostsItems(){
+  return(
+    <div className="posts__items">
+      <MainPost 
+        mealTime={"Lunch 🍽 Dinner"} 
+        title={"Your pasta questions, answered"} 
+        text={pastaText} 
+        readMoreLink={"Read more"}          
+      />
+      <Post />
+    </div>
   );
 }
