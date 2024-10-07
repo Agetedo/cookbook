@@ -43,10 +43,10 @@ function MainPost({ mealTime, title, text, readMoreLink }: MainPostProps){
         modules={[EffectFade, Autoplay]}
         id="mainPostGallery"
         effect={"fade"}
-        /*autoplay={{
+        autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }}*/
+        }}
         loop={true}
       >
         <SwiperSlide><img src={mainPostImage01} alt={"Pasta recipe"} /></SwiperSlide>

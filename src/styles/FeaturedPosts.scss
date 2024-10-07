@@ -20,8 +20,6 @@
   display: inline-block;
   padding: 5px 10px 5px 10px;
   background-color: var(--yellow-bg-color);
-  border: 1px solid var(--primary);
-  border-radius: 20px;
   font-family: "Lobster";
   font-weight: 400;
   font-size: 20px;
@@ -67,8 +65,6 @@
   display: inline-block;
   padding: 5px 10px 5px 10px;
   background-color: var(--yellow-bg-color);
-  border: 1px solid var(--primary);
-  border-radius: 20px;
   font-family: "Lobster";
   font-weight: 400;
   font-size: 14px;
@@ -97,7 +93,7 @@
 
 //---@media-featured-posts---------------
 @media (hover: hover) and (pointer: fine) {
-  .main-post__link:hover {
+  .post__link:hover {
     color: var(--orange-color);
     img {
       animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
@@ -105,7 +101,7 @@
   }
 }
 @media (hover: none) {
-  .main-post__link:active {
+  .post__link:active {
     color: var(--orange-color);
     img {
       animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
