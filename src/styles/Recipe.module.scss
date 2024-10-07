@@ -89,9 +89,6 @@
   }
 }
 @media(max-width: 768px) {
-  .recipe {
-    margin-top: calc(30px + (50 - 30)*((100vw - 320px)/(768 - 320)));
-  }
   .recipeCard {
     padding: calc(10px + (15 - 10)*((100vw - 320px)/(768 - 320)));
   }

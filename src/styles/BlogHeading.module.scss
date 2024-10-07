@@ -54,5 +54,9 @@
     opacity: 1;
   }
 }
-
-
+@media(max-width: 768px) {
+  .blogTitle {
+    font-size: calc(50px + (56 - 50)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(52px + (60 - 52)*((100vw - 320px)/(768 - 320)));
+  }
+}

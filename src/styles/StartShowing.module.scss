@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  overflow-y: scroll;
 }
 .startItems {
   margin-top: 10%;
@@ -83,25 +84,11 @@
     color: var(--yellow-bg-color);
   }
 }
-@media(max-width: 1440px) {
-  .startItems {
-    gap: calc(30px + (50 - 30)*((100vw - 320px)/(1440 - 320)));
-  }
+@media(max-width: 768px) {
   .title {
-    font-size: calc(40px + (75 - 40)*((100vw - 320px)/(1440 - 320)));
-    line-height: calc(42px + (80 - 42)*((100vw - 320px)/(1440 - 320)));
-  }
-  .text {
-    font-size: calc(25px + (35 - 25)*((100vw - 320px)/(1440 - 320)));
-    line-height: calc(30px + (43 - 30)*((100vw - 320px)/(1440 - 320)));
-  }
-  .startButton {
-    padding-top: calc(10px + (20 - 10)*((100vw - 320px)/(1440 - 320)));
-    padding-right: calc(37px + (74 - 37)*((100vw - 320px)/(1440 - 320)));
-    padding-bottom: calc(10px + (20 - 10)*((100vw - 320px)/(1440 - 320)));
-    padding-left: calc(37px + (74 - 37)*((100vw - 320px)/(1440 - 320)));
-    font-size: calc(20px + (26 - 20)*((100vw - 320px)/(1440 - 320)));
-    line-height: calc(22px + (28 - 22)*((100vw - 320px)/(1440 - 320)));
+    padding: 0px;
+    font-size: calc(60px + (75 - 60)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(74px + (80 - 74)*((100vw - 320px)/(768 - 320)));
   }
 }
 @media (orientation: landscape) and (max-height: 540px) {
@@ -109,4 +96,3 @@
     overflow-y: scroll;
   } 
 }
-

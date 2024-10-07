@@ -198,16 +198,8 @@
     margin-top: calc(17px + (40 - 17)*((100vw - 320px)/(768 - 320)));
   }
   .subscribeText {
-    font-size: calc(14px + (30 - 14)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(24px + (49 - 24)*((100vw - 320px)/(768 - 320)));
-  }
-  .subscribeButton {
-    padding-top: calc(8px + (13 - 8)*((100vw - 320px)/(768 - 320)));
-    padding-right: calc(23px + (34 - 23)*((100vw - 320px)/(768 - 320)));
-    padding-bottom: calc(8px + (13 - 8)*((100vw - 320px)/(768 - 320)));
-    padding-left: calc(23px + (34 - 23)*((100vw - 320px)/(768 - 320)));
-    font-size: calc(11px + (16 - 11)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(16px + (20 - 16)*((100vw - 320px)/(768 - 320)));
+    font-size: calc(20px + (30 - 20)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(28px + (49 - 28)*((100vw - 320px)/(768 - 320)));
   }
   .modal {
     padding-top: 31%;
@@ -233,8 +225,6 @@
   }
   .modalText {
     margin-top: calc(9px + (15 - 9)*((100vw - 320px)/(768 - 320)));
-    font-size: calc(14px + (23 - 14)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(24px + (36 - 24)*((100vw - 320px)/(768 - 320)));
   }
   .modalClose {
     gap: calc(10px + (20 - 10)*((100vw - 320px)/(768 - 320)));

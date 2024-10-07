@@ -41,22 +41,29 @@ function MainPost({ mealTime, title, text, readMoreLink }: MainPostProps){
     <div className="main-post">
       <Swiper
         modules={[EffectFade, Autoplay]}
-        id="mainPostGallery"
         effect={"fade"}
-        /*autoplay={{
+        autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }}*/
+        }}
         loop={true}
       >
-        <SwiperSlide><img src={mainPostImage01} alt={"Pasta recipe"} /></SwiperSlide>
-        <SwiperSlide><img src={mainPostImage02} alt={"Pasta recipe"} /></SwiperSlide>
-        <SwiperSlide><img src={mainPostImage03} alt={"Pasta recipe"} /></SwiperSlide>
+        <SwiperSlide className="main-post__image">
+          <img src={mainPostImage01} alt={"Pasta recipe"} />
+        </SwiperSlide>
+        <SwiperSlide className="main-post__image">
+          <img src={mainPostImage02} alt={"Pasta recipe"} />
+        </SwiperSlide>
+        <SwiperSlide className="main-post__image">
+          <img src={mainPostImage03} alt={"Pasta recipe"} />
+        </SwiperSlide>
       </Swiper>
 
       <span className="meal-time">{mealTime}</span>
-      <h3 className="main-post__title">{title}</h3>
-      <p className="main-post__text">{text}</p>
+      <Link to={PathConstants.STARTPAGE}>
+        <h3 className="main-post__title">{title}</h3>
+        <p className="main-post__text">{text}</p>
+      </Link>
       <Link to={PathConstants.STARTPAGE} className="post__link">
         {readMoreLink}
         <img src={arrowLink} alt="#" />
@@ -68,11 +75,13 @@ function MainPost({ mealTime, title, text, readMoreLink }: MainPostProps){
 function Post(){
   const featuredPostList = featuredPosts.map( post =>
     <div key={post.id} className="post__content">
-      <img src={post.imageSrc} alt={post.imageAlt} />
+      <img src={post.imageSrc} alt={post.imageAlt} className="post__image"/>
       <section>
         <span className="post__time">{post.mealTime}</span>
-        <h2 className="post__title">{post.title}</h2>
-        <p className="post__preview">{post.text}</p>
+        <Link to={post.linkTo}>
+          <h2 className="post__title">{post.title}</h2>
+          <p className="post__preview">{post.text}</p>
+        </Link>
         <Link to={post.linkTo} className="post__link">
           {post.readMoreText}
           <img src={post.arrowLink} alt="#" />

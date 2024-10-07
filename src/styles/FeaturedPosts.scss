@@ -1,27 +1,27 @@
 .featured-posts {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .featured__title {
-
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 38px;
+  text-transform: capitalize;
+  text-wrap: pretty;
 }
 .posts__items {
+  margin-top: 50px;
   display: flex;
   align-items: flex-start;
-  gap: 100px;
+  justify-content: space-between;
 }
 .main-post {
   width: 48.58%;
-}
-#mainPostGallery {
-  width: 793px;
 }
 .meal-time {
   margin-top: 17px;
   display: inline-block;
   padding: 5px 10px 5px 10px;
   background-color: var(--yellow-bg-color);
-  border: 1px solid var(--primary);
-  border-radius: 20px;
   font-family: "Lobster";
   font-weight: 400;
   font-size: 20px;
@@ -44,7 +44,7 @@
   text-wrap: pretty;
 }
 .post__link {
-  margin-top: 25px;
+  margin-top: 5px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -67,8 +67,6 @@
   display: inline-block;
   padding: 5px 10px 5px 10px;
   background-color: var(--yellow-bg-color);
-  border: 1px solid var(--primary);
-  border-radius: 20px;
   font-family: "Lobster";
   font-weight: 400;
   font-size: 14px;
@@ -90,14 +88,9 @@
   line-height: 18px;
   text-wrap: pretty;
 }
-
-
-
-
-
 //---@media-featured-posts---------------
 @media (hover: hover) and (pointer: fine) {
-  .main-post__link:hover {
+  .post__link:hover {
     color: var(--orange-color);
     img {
       animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
@@ -105,7 +98,7 @@
   }
 }
 @media (hover: none) {
-  .main-post__link:active {
+  .post__link:active {
     color: var(--orange-color);
     img {
       animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
@@ -118,5 +111,30 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@media(max-width: 1024px) {
+  .posts__items {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .main-post,
+  .posts__list {
+    width: 100%;
+  }
+  .posts__list {
+    gap: 50px;
+  }
+  .post__image {
+    display: none;
+  }
+  .main-post__image {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media(max-width: 768px) {
+  .featured-posts {
+    margin-top: calc(50px + (100 - 50)*((100vw - 320px)/(768 - 320)));
   }
 }
