@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PathConstants from "../routes/pathConstants";
 import arrowLink from "/pepicons-arrow.png";
 import styles from "../styles/BlogHeading.module.scss";
-const publishText = <>{"We don't publish a new CookBook recipe until we're certain it's the tastiest version out there, and we’re constantly updating our old recipes with new techniques and improvements based on further testing and reader suggestions."}</>;
+const publishText = <>{"We don't publish a new CookBook recipe until we're certain it's the tastiest version out there, and we're constantly updating our old recipes with new techniques and improvements based on further testing and reader suggestions."}</>;
 
 export default function BlogHeading() {
   return (
