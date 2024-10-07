@@ -29,7 +29,7 @@
   line-height: 25px;
   text-wrap: pretty;
 }
-//---@media-blogHeading---------
+//---@media-blogHeading------------
 @media (hover: hover) and (pointer: fine) {
   .titleLink:hover {
     color: var(--orange-color);
@@ -39,7 +39,7 @@
   }
 }
 @media (hover: none) {
-  .titleLink :active {
+  .titleLink:active {
     color: var(--orange-color);
     img {
       animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
@@ -54,4 +54,5 @@
     opacity: 1;
   }
 }
+
 
