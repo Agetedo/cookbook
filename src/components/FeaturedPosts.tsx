@@ -7,7 +7,7 @@ import mainPostImage03 from "/main-post-image03.jpg";
 import { Link } from "react-router-dom";
 import PathConstants from "../routes/pathConstants";
 import arrowLink from "/pepicons-arrow.png";
-import { featuredPosts } from "../dB/featuredPosts";
+import { blogPosts } from "../dB/blogPosts.ts";
 import "swiper/scss";
 import "swiper/scss/effect-fade";
 import "../styles/FeaturedPosts.scss";
@@ -73,7 +73,8 @@ function MainPost({ mealTime, title, text, readMoreLink }: MainPostProps){
 }
 
 function Post(){
-  const featuredPostList = featuredPosts.map( post =>
+  const threePosts = blogPosts.slice(0, 3);
+  const featuredPostList = threePosts.map( post =>
     <div key={post.id} className="post__content">
       <img src={post.imageSrc} alt={post.imageAlt} className="post__image"/>
       <section>

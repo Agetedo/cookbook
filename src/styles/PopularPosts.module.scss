@@ -4,7 +4,104 @@
 .popularTitle {
   font-weight: 600;
   font-size: 34px;
-  line-height: 38px;
+  line-height: 38px; 
+  color: var(--orange-color);
   text-transform: capitalize;
   text-wrap: pretty;
 }
+.popularPostsList {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto; 
+  gap: 30px 30px; 
+}
+.postContent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.postTime {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  background-color: var(--yellow-bg-color);
+  font-family: "Lobster";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: capitalize;
+  text-wrap: pretty;
+}
+.postTitle {
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: capitalize;
+  text-wrap: pretty;
+}
+.postPreview {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  text-wrap: pretty;
+}
+.postLink {
+  margin-top: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 17px;
+  line-height: 17px;
+  color: var(--yellow-bg-color);
+}
+//---@media-featured-posts---------------
+@media (hover: hover) and (pointer: fine) {
+  .post__link:hover {
+    color: var(--orange-color);
+    img {
+      animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
+    }
+  }
+}
+@media (hover: none) {
+  .post__link:active {
+    color: var(--orange-color);
+    img {
+      animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
+    }
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*@media(max-width: 1024px) {
+  .posts__items {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .main-post,
+  .posts__list {
+    width: 100%;
+  }
+  .posts__list {
+    gap: 50px;
+  }
+  .post__image {
+    display: none;
+  }
+  .main-post__image {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media(max-width: 768px) {
+  .featured-posts {
+    margin-top: calc(50px + (100 - 50)*((100vw - 320px)/(768 - 320)));
+  }
+}*/
