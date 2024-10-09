@@ -60,7 +60,7 @@ function MainPost({ mealTime, title, text, readMoreLink }: MainPostProps){
       </Swiper>
 
       <span className="meal-time">{mealTime}</span>
-      <Link to={PathConstants.STARTPAGE}>
+      <Link to={PathConstants.POSTPAGE}>
         <h3 className="main-post__title">{title}</h3>
         <p className="main-post__text">{text}</p>
       </Link>

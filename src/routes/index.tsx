@@ -34,6 +34,7 @@ const RecipePage25 = React.lazy(() => import("../pages/RecipePape25"))
 const RecipePage26 = React.lazy(() => import("../pages/RecipePape26"))
 const RecipePage27 = React.lazy(() => import("../pages/RecipePape27"))
 const RecipePage28 = React.lazy(() => import("../pages/RecipePape28"))
+const PostPage = React.lazy(() => import("../pages/PostPage"))
 
 const routes = [
   { path: PathConstants.STARTPAGE, element: <StartPage /> },
@@ -68,5 +69,6 @@ const routes = [
   { path: PathConstants.RECIPEPAGE26, element: <RecipePage26 /> },
   { path: PathConstants.RECIPEPAGE27, element: <RecipePage27 /> },
   { path: PathConstants.RECIPEPAGE28, element: <RecipePage28 /> },
+  { path: PathConstants.POSTPAGE, element: <PostPage /> },
 ]
 export default routes;
