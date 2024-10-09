@@ -64,7 +64,7 @@ function MainPost({ mealTime, title, text, readMoreLink }: MainPostProps){
         <h3 className="main-post__title">{title}</h3>
         <p className="main-post__text">{text}</p>
       </Link>
-      <Link to={PathConstants.STARTPAGE} className="post__link">
+      <Link to={PathConstants.POSTPAGE} className="post__link">
         {readMoreLink}
         <img src={arrowLink} alt="#" />
       </Link>

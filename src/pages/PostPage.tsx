@@ -1,9 +1,9 @@
-//import Contact from "../components/contact/Contact.tsx";
+import Post from "../components/Post";
 
 export default function PostPage() {
   return (
     <>
-        POST TEXT
+      <Post />
     </>
   );
 }
