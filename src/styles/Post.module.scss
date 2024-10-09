@@ -29,17 +29,29 @@
 }
 .previewText {
   margin: 20px auto 0 auto;
-  max-width: 960px;/////////////////
+  max-width: 960px;
   font-weight: 600;
-  font-size: 17px;
-  line-height: 25px;
+  line-height: 30px;
   text-wrap: pretty;
 }
 .textWrapper {
   max-width: 960px;
-  margin: 0px auto;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-
+.question {
+  font-family: "Lobster";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  text-wrap: pretty;
+}
+.answer {
+  line-height: 34px;
+  text-wrap: pretty;
+}
 //---@media-post-----------------------
 @media (hover: hover) and (pointer: fine) {
   .titleLink:hover {
