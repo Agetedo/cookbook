@@ -149,6 +149,7 @@
 }
 .error {
   margin-top: 12px;
+  padding: 0px 5px 0px 5px;
   font-size: 15px;
   line-height: 20px;
   text-align: center;
@@ -189,53 +190,46 @@
   .content {
     width: 502px;
   }
-  .subscribePortal {
-    margin-top: calc(60px + (128 - 60)*((100vw - 320px)/(1440 - 320)));
-  }
 }
 @media(max-width: 768px) {
+  .subscribePortal {
+    margin-top: 60px;
+  }
   .modalWrapper {
-    margin-top: calc(17px + (40 - 17)*((100vw - 320px)/(768 - 320)));
+    margin-top: 17px;
   }
   .subscribeText {
-    font-size: calc(20px + (30 - 20)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(28px + (49 - 28)*((100vw - 320px)/(768 - 320)));
+    font-size: 20px;
+    line-height: 28px;
   }
   .modal {
     padding-top: 31%;
   }
   .subscribeForm input {
-    font-size: calc(13px + (15 - 13)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(13px + (15 - 13)*((100vw - 320px)/(768 - 320)));
-    padding: calc(9px + (15 - 9)*((100vw - 320px)/(768 - 320)));
+    font-size: 13px;
+    line-height: 13px;
+    padding: 9px;
   }
   .subscribeForm::placeholder {
-    font-size: calc(13px + (15 - 13)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(13px + (15 - 13)*((100vw - 320px)/(768 - 320)));
+    font-size: 13px;
+    line-height: 13px;
   }
   .subscribeForm button {
-    padding-top: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320)));
-    padding-bottom: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320)));
-    font-size: calc(11px + (14 - 11)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(11px + (14 - 11)*((100vw - 320px)/(768 - 320)));
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 11px;
+    line-height: 11px;
   }
   .content {
     width: calc(300px + (502 - 300)*((100vw - 320px)/(768 - 320)));
     padding-bottom: calc(51px + (88 - 51)*((100vw - 320px)/(768 - 320)));
   }
-  .modalText {
-    margin-top: calc(9px + (15 - 9)*((100vw - 320px)/(768 - 320)));
-  }
   .modalClose {
-    gap: calc(10px + (20 - 10)*((100vw - 320px)/(768 - 320)));
-    font-size: calc(11px + (15 - 11)*((100vw - 320px)/(768 - 320)));
+    gap: 10px;
+    font-size: 14px;
     img {
-      width: calc(11px + (24 - 11)*((100vw - 320px)/(768 - 320)));
+      width: 17px;
     }
-  }
-  .error {
-    font-size: calc(10px + (15 - 10)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(15px + (20 - 15)*((100vw - 320px)/(768 - 320)));
   }
 }
 @media (orientation: landscape) and (max-height: 500px)  {
@@ -254,6 +248,11 @@
   }
 }
 @media (orientation: landscape) and (max-height: 320px) and (max-width: 480px) {
+  .modal {
+    padding-top: 14%;
+  }
+}
+@media (orientation: portrait) and (max-width: 320px)and (max-height: 480px)  {
   .modal {
     padding-top: 14%;
   }
