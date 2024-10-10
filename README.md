@@ -11,3 +11,4 @@
 - Swiper
 - Sass(scss)
 - autoprefixer
+- CSS-modules
