@@ -1,0 +1,1 @@
+import{j as e}from"./index-DK3O6ZaY.js";import{A as i,R as r}from"./AdviceGallery-DBLXKDuk.js";import{S as t}from"./SubscribePortal-DLZ01dY3.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-DSwpESyA.js";function c(){return e.jsxs(e.Fragment,{children:[e.jsx(i,{description:"Cheese pie with bacon"}),e.jsx(r,{title:"Cheese pie with bacon"}),e.jsx(t,{})]})}export{c as default};

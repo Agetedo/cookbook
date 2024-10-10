@@ -1,0 +1,1 @@
+import{j as e}from"./index-DK3O6ZaY.js";import{A as a,R as r}from"./AdviceGallery-DBLXKDuk.js";import{S as s}from"./SubscribePortal-DLZ01dY3.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-DSwpESyA.js";function p(){return e.jsxs(e.Fragment,{children:[e.jsx(a,{description:"Feta and olives salad"}),e.jsx(r,{title:"Feta and olives salad"}),e.jsx(s,{})]})}export{p as default};

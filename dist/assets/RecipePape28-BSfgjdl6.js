@@ -1,0 +1,1 @@
+import{j as t}from"./index-DK3O6ZaY.js";import{A as e,R as r}from"./AdviceGallery-DBLXKDuk.js";import{S as i}from"./SubscribePortal-DLZ01dY3.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-DSwpESyA.js";function n(){return t.jsxs(t.Fragment,{children:[t.jsx(e,{description:"Oatmeal with nuts"}),t.jsx(r,{title:"Oatmeal with nuts"}),t.jsx(i,{})]})}export{n as default};

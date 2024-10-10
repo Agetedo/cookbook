@@ -1,0 +1,1 @@
+import{j as t}from"./index-DK3O6ZaY.js";import{A as r,R as o}from"./AdviceGallery-DBLXKDuk.js";import{S as e}from"./SubscribePortal-DLZ01dY3.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-DSwpESyA.js";function n(){return t.jsxs(t.Fragment,{children:[t.jsx(r,{description:"Egg on toast"}),t.jsx(o,{title:"Egg on toast"}),t.jsx(e,{})]})}export{n as default};

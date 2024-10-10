@@ -1,0 +1,1 @@
+import{j as r}from"./index-DK3O6ZaY.js";import{A as e,R as s}from"./AdviceGallery-DBLXKDuk.js";import{S as i}from"./SubscribePortal-DLZ01dY3.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-DSwpESyA.js";function c(){return r.jsxs(r.Fragment,{children:[r.jsx(e,{description:"Creamy fish soup"}),r.jsx(s,{title:"Creamy fish soup"}),r.jsx(i,{})]})}export{c as default};
