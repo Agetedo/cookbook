@@ -102,7 +102,7 @@
   text-wrap: pretty;
   color: var(--orange-color);
 }
-//---@media-selected-------------
+//---@media-selected---------------
 @media (hover: hover) and (pointer: fine) {
   .button__filter:hover {
     background-color: var(--orange-color);
@@ -149,12 +149,6 @@
     }
   }
 }
-@media(max-width: 1676px) {
-  .selected {
-    margin-top: calc(20px + (25 - 20)*((100vw - 320px)/(1676 - 320)));
-    margin-bottom: calc(50px + (100 - 50)*((100vw - 320px)/(1676 - 320)));
-  }
-}
 @media(max-width: 1257px) {
   .cards__items {
     grid-template-columns: repeat(3, 1fr);
@@ -176,39 +170,12 @@
     margin-top: calc(35px + (60 - 35)*((100vw - 320px)/(768 - 320)));
     flex-wrap: wrap;
   }
-  .selected__title {
-    font-size: calc(36px + (73 - 36)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(40px + (97 - 40)*((100vw - 320px)/(768 - 320)));
-  }
-  .selected__text {
-    margin-top: calc(10px + (25 - 10)*((100vw - 320px)/(768 - 320)));
-    font-size: calc(16px + (25 - 16)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(24px + (35 - 24)*((100vw - 320px)/(768 - 320)));
-  }
-  .button__filter,
-  .filter__active {
-    padding: calc(8px + (15 - 8)*((100vw - 320px)/(768 - 320))) 
-             calc(10px + (20 - 10)*((100vw - 320px)/(768 - 320))); 
-    font-size: calc(16px + (22 - 16)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(16px + (22 - 16)*((100vw - 320px)/(768 - 320))); 
-  }
-  .cards__items {
-    margin-top: calc(30px + (60 - 30)*((100vw - 320px)/(768 - 320)));
-    column-gap: calc(10px + (30 - 10)*((100vw - 320px)/(768 - 320)));
-    row-gap: calc(30px + (50 - 30)*((100vw - 320px)/(768 - 320)));
-  }
-  .recipe-card__title {
-    padding-left: calc(3px + (7 - 3)*((100vw - 320px)/(768 - 320)));
-    padding-right: calc(3px + (7 - 3)*((100vw - 320px)/(768 - 320)));
-    font-size: calc(12px + (20 - 12)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(17px + (28 - 17)*((100vw - 320px)/(768 - 320)));
-  }
   .recipe-card__time {
-    top: calc(5px + (10 - 5)*((100vw - 320px)/(768 - 320)));
-    right: calc(5px + (10 - 5)*((100vw - 320px)/(768 - 320)));
-    margin-left: calc(5px + (10 - 5)*((100vw - 320px)/(768 - 320)));
-    padding: calc(3px + (5 - 3)*((100vw - 320px)/(768 - 320)));
-    font-size: calc(11px + (20 - 11)*((100vw - 320px)/(768 - 320)));
-    line-height: calc(11px + (20 - 11)*((100vw - 320px)/(768 - 320)));
+    display: none;
+  }
+}
+@media(max-width: 419px) {
+  .cards__items {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
