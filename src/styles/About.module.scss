@@ -1,0 +1,38 @@
+.aboutWrapper {
+  max-width: 818px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+.aboutText {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--orange-color);
+  text-transform: capitalize;
+}
+.text {
+  line-height: 34px;
+  text-wrap: pretty;
+}
+.mail {
+  display: inline-block;
+  color: var(--orange-color);
+  transition: all 1s ease;
+}
+//---@media-aboutText-------
+@media (hover: hover) and (pointer: fine) {
+  .mail:hover {
+    color: var(--yellow-bg-color);
+  }
+}
+@media (hover: none) {
+  .mail:active {
+    color: var(--yellow-bg-color);
+  }
+}

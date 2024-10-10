@@ -1,9 +1,11 @@
-//import Contact from "../components/contact/Contact.tsx";
+import About from "../components/About";
+import SubscribePortal from "../components/SubscribePortal";
 
 export default function AboutPage() {
   return (
     <>
-      About Page
+      <About />
+      <SubscribePortal />
     </>
   );
 }
