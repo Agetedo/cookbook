@@ -34,8 +34,8 @@ function StartPageContent({ title, text, buttonText }: StartPageProps) {
   return (
     <div className={styles.startItems}>
       <h1 className={styles.title}>{title}</h1>
-      <p className={styles.text}>{text}</p>
       <Link to={PathConstants.SELECTEDPAGE} className={styles.startButton}>{buttonText}</Link>
+      <p className={styles.text}>{text}</p>
     </div>
   );
 }
