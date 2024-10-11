@@ -1,1 +1,0 @@
-import{j as e}from"./index-DK3O6ZaY.js";import{A as t,R as r}from"./AdviceGallery-DBLXKDuk.js";import{S as i}from"./SubscribePortal-DLZ01dY3.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-DSwpESyA.js";function c(){return e.jsxs(e.Fragment,{children:[e.jsx(t,{description:"Eggplant with cheese"}),e.jsx(r,{title:"Eggplant with cheese"}),e.jsx(i,{})]})}export{c as default};

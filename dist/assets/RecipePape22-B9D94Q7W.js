@@ -1,0 +1,1 @@
+import{j as e}from"./index-DGwNxb5a.js";import{A as t,R as r}from"./AdviceGallery-CG0sETvH.js";import{S as i}from"./SubscribePortal-DTA4Kjw2.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-CYqGDc6S.js";function l(){return e.jsxs(e.Fragment,{children:[e.jsx(t,{description:"Cod with vegetables"}),e.jsx(r,{title:"Cod with vegetables"}),e.jsx(i,{})]})}export{l as default};

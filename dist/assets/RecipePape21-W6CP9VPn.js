@@ -1,1 +1,0 @@
-import{j as e}from"./index-DK3O6ZaY.js";import{A as r,R as t}from"./AdviceGallery-DBLXKDuk.js";import{S as i}from"./SubscribePortal-DLZ01dY3.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-DSwpESyA.js";function p(){return e.jsxs(e.Fragment,{children:[e.jsx(r,{description:"Lemon cream jelly"}),e.jsx(t,{title:"Lemon cream jelly"}),e.jsx(i,{})]})}export{p as default};
