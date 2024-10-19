@@ -84,7 +84,6 @@ function FooterForm({ emailLabel }: { emailLabel: string }) {
         />
         
       </fieldset>
-
       <FooterFormButton buttonText={"Subscribe"}/>
     </form>
   );
