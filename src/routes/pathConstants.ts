@@ -33,5 +33,4 @@ const PathConstants = {
   RECIPEPAGE28: "/recipe-page28",
   POSTPAGE: "/post-page",
 }
-
 export default PathConstants;
