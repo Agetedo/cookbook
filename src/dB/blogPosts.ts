@@ -70,4 +70,4 @@ export const blogPosts: BlogPostsType[] = [{
   readMoreText: "Read more",
   linkTo: "/post-page",
   arrowLink: "/pepicons-arrow.png",
-}]
+}];
