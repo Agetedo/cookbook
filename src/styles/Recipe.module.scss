@@ -70,7 +70,7 @@
   font-size: 130%;
   color: var(--orange-color);
 }
-//---@media-recipe-------------------
+//---@media-recipe------------------
 @media(max-width: 1088px) {
   .ingredientsItems {
     gap: calc(40px + (100 - 40)*((100vw - 1024px)/(1088 - 1024)));
