@@ -7,7 +7,6 @@ const tryText = <>{"Easy and simple! Choose time for yourself and get recipes fo
 
 export default function Selected() {
   const [cards, setCards] = useState("");
-
   const filteredCards = cards === "" ? recipesCards :
     recipesCards.filter(recipe => recipe.mealTime.includes(cards));
   const recipeCardsList = filteredCards.map((card) => 
