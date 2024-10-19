@@ -20,7 +20,6 @@ export default function Layout() {
     </>
   );
 }
-
 function ErrorDemo() {
   return(
     <p style={{ color: "red", textAlign: "center", fontSize: 20, 
