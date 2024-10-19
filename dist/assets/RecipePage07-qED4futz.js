@@ -1,1 +1,0 @@
-import{j as r}from"./index-DGwNxb5a.js";import{A as i,R as e}from"./AdviceGallery-CG0sETvH.js";import{S as s}from"./SubscribePortal-DTA4Kjw2.js";import"./recipesCards-DQ96yFCd.js";import"./swiper-CYqGDc6S.js";function p(){return r.jsxs(r.Fragment,{children:[r.jsx(i,{description:"Grilled shrimp salad"}),r.jsx(e,{title:"Grilled shrimp salad"}),r.jsx(s,{})]})}export{p as default};
