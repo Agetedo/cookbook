@@ -19,7 +19,6 @@ function PopularPostsTitle({ title }: { title:string }){
     <h2 className={styles.popularTitle}>{title}</h2>
   );
 }
-
 function PostsList(){
   const popularPostList = blogPosts.map( post =>
     <div key={post.id} className={styles.postContent}>
