@@ -71,4 +71,5 @@ const routes = [
   { path: PathConstants.RECIPEPAGE28, element: <RecipePage28 /> },
   { path: PathConstants.POSTPAGE, element: <PostPage /> },
 ]
+
 export default routes;
