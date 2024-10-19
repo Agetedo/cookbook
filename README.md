@@ -1,6 +1,6 @@
 # [cookBook](https://cb-recipes.netlify.app/) << deploy
 
-- React(hooks): useState, useEffect, useId, Suspense.
+- React: useState, useEffect, useId, Suspense.
 - TypeScript
 - Vite
 - react-router-dom: createBrowserRouter, RouterProvider, NavLink Link, Outlet.
