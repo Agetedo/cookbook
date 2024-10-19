@@ -14,7 +14,6 @@ export default function StartPageLayout() {
     </ErrorBoundary>
   );
 }
-
 function ErrorDemo() {
   return(
     <p style={{ color: "red", textAlign: "center", fontSize: 20, 
