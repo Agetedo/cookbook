@@ -3,7 +3,7 @@
 - React: useState, useEffect, useId, Suspense.
 - TypeScript
 - Vite
-- react-router-dom: createBrowserRouter, RouterProvider, NavLink Link, Outlet.
+- react-router-dom: createBrowserRouter, RouterProvider, NavLink, Link, Outlet.
 - eslint
 - react-error-boundary
 - react-hook-form
