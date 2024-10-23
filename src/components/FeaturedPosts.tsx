@@ -11,7 +11,7 @@ import { blogPosts } from "../dB/blogPosts.ts";
 import "swiper/scss";
 import "swiper/scss/effect-fade";
 import "../styles/FeaturedPosts.scss";
-const pastaText = <>{"Whether it's the brand, the shape, or the ingredients that help you choose what pasta to keep in your pantry, we want to help answer some commonly raised questions about pasta specifically, as well as the broader, oh-so-wonderful-world of pasta at large..."}</>;
+const pastaText = "Whether it's the brand, the shape, or the ingredients that help you choose what pasta to keep in your pantry, we want to help answer some commonly raised questions about pasta specifically, as well as the broader, oh-so-wonderful-world of pasta at large...";
 
 export default function FeaturedPosts() {
   return (
@@ -33,7 +33,7 @@ function FeaturedPostsTitle({ title }: { title:string }){
 interface MainPostProps {
   mealTime: string;
   title: string;
-  text: string | typeof pastaText;
+  text: string;
   readMoreLink: string;
 }
 function MainPost({ mealTime, title, text, readMoreLink }: MainPostProps){
