@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Conteiner from "../components/Conteiner";
 import { recipesCards } from "../dB/recipesCards";
 import "../styles/Selected.scss";
-const tryText = <>{"Easy and simple! Choose time for yourself and get recipes for cooking. Try it!"}</>;
+const tryText = "Easy and simple! Choose time for yourself and get recipes for cooking. Try it!";
 
 export default function Selected() {
   const [cards, setCards] = useState("");
@@ -61,7 +61,7 @@ export default function Selected() {
   )
 }
 
-function SelectedTitle({ title, text }: { title: string, text: string | typeof tryText }) {
+function SelectedTitle({ title, text }: { title: string, text: string }) {
   return (
     <>
       <h1 className="selected__title">{title}</h1>
